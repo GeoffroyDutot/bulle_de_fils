@@ -1,14 +1,12 @@
 body {
     background-color: #edfef4;
-    /* overflow:hidden; */
-    margin: 0; /* pas de marge */
-    padding: 0; /*ni de padding */
+    margin: 0;
+    padding: 0;
     height: 100%;
 }
 
 img#entete{
     margin-left: 20%;
-
     width: 60%;
     text-align: center;
     position: absolute;
@@ -16,7 +14,6 @@ img#entete{
 }
 
 #logo{
-
     margin-left: 2%;
     position: absolute;
     top: 0;
@@ -85,7 +82,7 @@ h1#titre{
         }
 
 footer{
-  margin-top: 2%;
+  margin-top: 1%;
   padding-top: 1%
   bottom: 0px;;
   float: left;

@@ -54,7 +54,7 @@ if (isset($_POST["valider"])) {
 <meta charset="utf-8"></meta>
 <title>Bulle de fil - Contact</title>
 <link rel="stylesheet" type="text/css" href="../css/contact.css">
-    <link rel="stylesheet" type="text/css" href="../css/theme.css">
+<link rel="stylesheet" type="text/css" href="../css/theme.css">
 
 </head>
 
