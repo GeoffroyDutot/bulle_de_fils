@@ -9,27 +9,39 @@ img#entete_galerie {
 
 }
 
+#logo{
+    margin-left: 2%;
+    position: absolute;
+}
 h1#titre_galerie{
     z-index: 2;
     position: absolute;
-    margin-left: 45%;
+    margin-left: 40%;
     margin-top: 5%;
     font-size: 72px;
-    color: aquamarine;
+    color: black;
+    font-family: Engravers MT;
 
 }
 
-div#bande_couleur1{
-
-    background-color: aquamarine;
-    width: 20%;
-}
 
 body{
-
-    background-color: aquamarine;
+    max-width: 500px;
+    background-color: #edfef4;
     z-index: 0;
     margin: 0;
 
 }
 
+table#tableau_galerie{
+
+    margin-top: 90%;
+    margin-left: 80%;
+
+}
+
+td{
+
+    padding-right: 100px;
+    padding-top: 50px;
+}
