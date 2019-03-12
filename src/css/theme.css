@@ -1,6 +1,7 @@
 body {
     background-color: #edfef4;
     /* overflow:hidden; */
+    margin: 0;
 }
 
 img#entete{
