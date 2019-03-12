@@ -1,4 +1,4 @@
-<?php 
+<?php
     session_start();
     $_SESSION['rank']="user";
 ?>
@@ -22,7 +22,7 @@
 
 <div class="menu">
     <ul>
-        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./index.php">Accueil</a></li>
         <li><a href="./src/php/galerie.php">galerie</a></li>
         <li><a href="./src/php/contact.php">contact</a></li>
     </ul>
