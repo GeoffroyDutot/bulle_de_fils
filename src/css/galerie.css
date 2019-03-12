@@ -26,22 +26,18 @@ h1#titre_galerie{
 
 
 body{
-<<<<<<< HEAD
-    max-width: 500px;
-=======
 
->>>>>>> 6860e92f2bed1b081ea16660d63c4154fd8dd27e
     background-color: #edfef4;
     z-index: 0;
     margin: 0;
 
 }
-<<<<<<< HEAD
+
 
 table#tableau_galerie{
 
-    margin-top: 90%;
-    margin-left: 80%;
+    margin-top: 23%;
+    margin-left: 21%;
 
 }
 
@@ -50,5 +46,5 @@ td{
     padding-right: 100px;
     padding-top: 50px;
 }
-=======
->>>>>>> 6860e92f2bed1b081ea16660d63c4154fd8dd27e
+
+
