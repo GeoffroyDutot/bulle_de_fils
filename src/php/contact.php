@@ -59,6 +59,10 @@ if (isset($_POST["valider"])) {
 	
 <body>
 
+<a href="../../index.html">Accueil</a>
+<a href="../php/galerie.php">galerie</a>
+<a href="../php/contact.php">contact</a>
+
 	<form action="" method="POST">
 	<table id="table">
 		
