@@ -15,13 +15,9 @@
 
 
 </header>
-<div class="menu">
-    <ul>
-        <li><a href="../../index.html">Accueil</a></li>
-        <li><a href="../php/galerie.php">galerie</a></li>
-        <li><a href="../php/contact.php">contact</a></li>
-    </ul>
-</div>
+
+<?php include('navbar.php') ?>
+
 <table id="tableau_galerie">
     <tr>
         <td> <img src="../images/couture.jpg" width="300px"></td>

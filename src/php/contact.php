@@ -60,13 +60,7 @@ if (isset($_POST["valider"])) {
 
 <body>
 
-<div class="menu">
-    <ul>
-        <li><a href="../../index.html">Accueil</a></li>
-        <li><a href="./galerie.php">galerie</a></li>
-        <li><a href="./contact.php">contact</a></li>
-    </ul>
-</div>
+<?php include('navbar.php') ?>
 
 <div class="block_articles">
 	<h1 style="text-align: center;">Contact</h1>
