@@ -54,14 +54,19 @@ if (isset($_POST["valider"])) {
 <meta charset="utf-8"></meta>
 <title>Bulle de fil - Contact</title>
 <link rel="stylesheet" type="text/css" href="../css/contact.css">
+    <link rel="stylesheet" type="text/css" href="../css/theme.css">
 
 </head>
 
 <body>
 
-<a href="../../index.html">Accueil</a>
-<a href="../php/galerie.php">galerie</a>
-<a href="../php/contact.php">contact</a>
+<div class="menu">
+    <ul>
+        <li><a href="../../index.html">Accueil</a></li>
+        <li><a href="./galerie.php">galerie</a></li>
+        <li><a href="./contact.php">contact</a></li>
+    </ul>
+</div>
 
 <div class="block_articles">
 	<h1 style="text-align: center;">Contact</h1>

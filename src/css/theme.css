@@ -1,0 +1,38 @@
+ul {
+    margin-left: 30%;
+    margin-top: 3%;
+    list-style-type:none;
+}
+li {
+    margin-left: 2px;
+    float: left;
+}
+ul li a {
+    display:block;
+    margin-left: 60%;
+    margin-right: 60%;
+    width:150px;
+
+    color:black;
+    text-decoration:none;
+    text-align:center;
+    padding:5px;
+    border:2px solid;
+
+}
+
+.autor{
+    margin-top: 10%;
+    position: fixed;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+footer{
+    position: absolute;
+    bottom: 1%;
+    text-align: center;
+}
+
+
