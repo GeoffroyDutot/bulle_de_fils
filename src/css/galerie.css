@@ -1,0 +1,50 @@
+img#entete_galerie {
+    margin-left: 20%;
+    height: 35%;
+    width: 60%;
+    text-align: center;
+    position: absolute;
+    margin-top: 0;
+    z-index: 1;
+
+}
+
+#logo{
+    margin-left: 2%;
+    position: absolute;
+}
+h1#titre_galerie{
+    z-index: 2;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 5%;
+    font-size: 72px;
+    color: black;
+    font-family: Engravers MT;
+
+}
+
+
+body{
+
+    background-color: #edfef4;
+    z-index: 0;
+    margin: 0;
+
+}
+
+
+table#tableau_galerie{
+
+    margin-top: 23%;
+    margin-left: 21%;
+
+}
+
+td{
+
+    padding-right: 100px;
+    padding-top: 50px;
+}
+
+
