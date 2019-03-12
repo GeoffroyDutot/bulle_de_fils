@@ -60,6 +60,12 @@ if (isset($_POST["valider"])) {
 
 <body>
 
+<header>
+    <img  id="logo" src="../images/logo.jpg">
+    <img id="entete"src="../images/couture.jpg">
+   <!-- <strong><h1 id="titre">Galerie</h1></strong> -->
+</header>
+
 <?php include('navbar.php') ?>
 
 <div class="block_articles">

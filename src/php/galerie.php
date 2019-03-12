@@ -10,11 +10,10 @@
 
 <header>
     <img  id="logo" src="../images/logo.jpg">
-    <img id="entete_galerie"src="../images/couture.jpg">
-    <strong><h1 id="titre_galerie">Galerie</h1></strong>
-
-
+    <img id="entete"src="../images/couture.jpg">
+    <!-- <strong><h1 id="titre">Galerie</h1></strong> -->
 </header>
+
 
 <?php include('navbar.php') ?>
 
