@@ -87,7 +87,8 @@ h1#titre{
         }
 
 footer{
-    position: absolute;
-    bottom: 1%;
-    margin-left: 45%;
+  bottom: 0px;
+  margin-bottom: 3px;
+  float: left;
+  margin-left: 45%;
 }
