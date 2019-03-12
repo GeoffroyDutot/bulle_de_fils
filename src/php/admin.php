@@ -8,37 +8,57 @@ $commandes = $requete->fetchAll(); ?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/admin.css">
     <script src="main.js"></script>
 </head>
 <body>
     <table>
         <tr>
-            <td>
+            <th>
                 Numero de la commande
-            </td>
-            <td>
+            </th>
+            <th>
                 Nom
-            </td>
-            <td>
+            </th>
+            <th>
                 Prenom
-            </td>
-            <td>
-                Mail
-            </td>
-            <td>
+            </th>
+            <th>
                 Numero de telephone
-            </td>
-            <td>
+            </th>
+            <th>
+                Mail
+            </th>
+            <th>
                 Objet de la commande
-            </td>
-
+            </th>
+            <?php
+foreach($commandes as $commande){
+    ?>
+    <tr>
+        <td>
+           <?php echo $commande['id_commande']; ?>
+        </td>
+        <td>
+           <?php echo $commande['nom']; ?>
+        </td>
+        <td>
+           <?php echo $commande['prenom']; ?>
+        </td>
+        <td>
+           <?php echo $commande['telephone']; ?>
+        </td>
+        <td>
+           <?php echo $commande['mail']; ?>
+        </td>
+        <td>
+           <?php echo $commande['objet']; ?>
+        </td>
+    </tr>
+    <?php
+}
+?>
     </table>
 </body>
 </html>
 
-<?php
-foreach($commandes as $commande){
-    echo $commande['id_commande']."<br>";
-}
-?>
