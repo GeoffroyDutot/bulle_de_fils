@@ -1,6 +1,6 @@
 <?php
 
-/* Connection � la base de donn�es */
+/* Connection à la base de données */
 
 $bdd = new PDO('mysql:host=localhost;dbname=bulledefil;charset=utf8', 'root', '');
 
@@ -9,12 +9,13 @@ if (isset($_POST["valider"])) {
 		$nom= htmlspecialchars($_POST["nom"]);
 		$mail= htmlspecialchars($_POST["mail"]);
 
+		
 
 		$numero = htmlspecialchars($_POST["numero"]);
         $objet = htmlspecialchars($_POST["objet"]);
 
 	if (!empty($_POST["prenom"]) AND !empty($_POST["nom"]) AND !empty($_POST["mail"]) AND !empty($_POST["objet"])) {
-	/* C'est plus s�curis� de passer les reponses en variable HP */
+	/* C'est plus sécurisé de passer les reponses en variable HP */
 
 			
 					/* TEST FORMAT ADRESSE EMAIL */
@@ -26,7 +27,7 @@ if (isset($_POST["valider"])) {
 									$sql = $bdd->prepare("INSERT INTO commandes(prenom, nom, mail, telephone, objet) VALUES (?, ?, ?, ?, ?)");
 									$sql->execute(array(
 									    $prenom, $nom, $mail, $numero, $objet));
-									$erreur = "Votre commande a bien �t� prise en compte !";
+									$erreur = "Votre commande a bien été prise en compte !";
 									//header("Location: ./index.php");
 
 									}
@@ -39,7 +40,7 @@ if (isset($_POST["valider"])) {
 	/* TEST SI TOUT LES CHAMPS SONT COMPLETES */
 	else
 	{
-		$erreur = "Tout les champs obligatoires doivent �tre complet�s !";
+		$erreur = "Tout les champs obligatoires doivent être completés !";
 	}
 	;}
 
@@ -61,11 +62,11 @@ if (isset($_POST["valider"])) {
 	<form action="" method="POST">
 	<table id="table">
 		
-		<tr><td class="txt">*Pr�nom :<br> <input type="text" name="prenom" placeholder="Pr�nom" maxlength="30" value="<?php echo $_POST['prenom'] ?>"></td></tr>
-		<tr><td class="txt">*Nom :<br> <input type="text" name="nom" placeholder="Nom" maxlength="30" value="<?php echo $_POST['nom'] ?>"></td></tr>
-		<tr><td class="txt">*Adresse Email :<br> <input type="email" name="mail" placeholder="@imie.fr" value="<?php echo $_POST['mail'] ?>"></td></tr>
-		<tr><td class="txt">Telephone :<br> <input type="text" name="numero" placeholder=" 06 01 02 03 04" maxlength="75" value="<?php echo $_POST['numero'] ?>"></td></tr>
-		<tr><td class="txt">*Objet de votre commande : <br><textarea name="objet" rows=2 cols=20 value="<?php echo $_POST['objet'] ?>" ></textarea>
+		<tr><td class="txt">*Prénom :<br> <input type="text" name="prenom" placeholder="Prénom" maxlength="30" value=" <?php if(isset($_POST["valider"])){  echo $_POST['prenom']; }?>"></td></tr>
+		<tr><td class="txt">*Nom :<br> <input type="text" name="nom" placeholder="Nom" maxlength="30" value="<?php if(isset($_POST["valider"])){ echo $_POST['nom']; } ?>"></td></tr>
+		<tr><td class="txt">*Adresse Email :<br> <input type="email" name="mail" placeholder="@imie.fr" value="<?php if(isset($_POST["valider"])){ echo $_POST['mail']; }?>"></td></tr>
+		<tr><td class="txt">Telephone :<br> <input type="text" name="numero" placeholder=" 06 01 02 03 04" maxlength="75" value="<?php if(isset($_POST["valider"])){ echo $_POST['numero']; }?>"></td></tr>
+		<tr><td class="txt">*Objet de votre commande : <br><textarea name="objet" rows=2 cols=20 value="<?php if(isset($_POST["valider"])){ echo $_POST['objet']; } ?>" ></textarea>
 		<tr><td class="txt"><i><h6>*Champs obligatoires<br></h6></i></td></tr>
 		<tr>
 			
