@@ -88,10 +88,7 @@ if (isset($_POST["valider"])) {
 	</form>
 	</div>
 
-    <footer>
-        <a href="../html/cgu.html">CGU</a>
-        <a href="../html/mention_legal.html">Mention Legal</a>
-    </footer>
+<?php include('footer.php')?>
 
 </body>
 </html>

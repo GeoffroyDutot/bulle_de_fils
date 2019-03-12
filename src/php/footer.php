@@ -1,8 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: simon
- * Date: 12/03/2019
- * Time: 13:40
- */
-?>
+<footer>
+    <a href="../html/cgu.html">CGU</a>
+    <a href="../html/mention_legal.html">Mention Legal</a>
+</footer>

@@ -61,4 +61,3 @@ foreach($commandes as $commande){
     </table>
 </body>
 </html>
-
