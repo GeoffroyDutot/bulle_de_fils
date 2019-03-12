@@ -13,7 +13,7 @@
 <body>
 
 <header>
-    <img  id="logo" src="src/images/logo.jpg">
+    <a href="index.php"><img  id="logo" src="src/images/logo.jpg"></a>
     <img id="entete"src="src/images/entete.PNG">
     <!-- <strong><h1 id="titre">Galerie</h1></strong> -->
 
