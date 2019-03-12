@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a36f4cad-553d-4428-ba27-607769c591d8" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+=======
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/php/galerie.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/php/galerie.php" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/html/mention_legal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/cgu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/cgu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/mention legal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/php/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/php/contact.php" afterDir="false" />
+>>>>>>> e5cbd268aa2dc4299efdf89dc8dca39bec419984
+>>>>>>> de4e9bb9ecb897b68b23b05397571bd3885b0720
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,6 +27,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/php/contact.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+=======
     <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
@@ -36,19 +64,45 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
               <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+>>>>>>> e5cbd268aa2dc4299efdf89dc8dca39bec419984
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/php/contact.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/php/galerie.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1366">
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="204">
+              <caret line="12" column="56" lean-forward="true" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+=======
+            <state relative-caret-position="312">
+>>>>>>> de4e9bb9ecb897b68b23b05397571bd3885b0720
               <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="87" selection-end-column="13" />
+>>>>>>> e5cbd268aa2dc4299efdf89dc8dca39bec419984
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/theme.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+<<<<<<< HEAD
+              <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+=======
+              <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+>>>>>>> e5cbd268aa2dc4299efdf89dc8dca39bec419984
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> de4e9bb9ecb897b68b23b05397571bd3885b0720
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -64,12 +118,22 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/src/php/contact.php" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/css/theme.css" />
+        <option value="$PROJECT_DIR$/src/php/galerie.php" />
+=======
         <option value="$PROJECT_DIR$/src/php/galerie.php" />
         <option value="$PROJECT_DIR$/src/html/mention legal.html" />
         <option value="$PROJECT_DIR$/src/php/contact.php" />
         <option value="$PROJECT_DIR$/src/html/cgu.html" />
         <option value="$PROJECT_DIR$/src/html/mention_legal.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/index.html" />
+=======
+>>>>>>> e5cbd268aa2dc4299efdf89dc8dca39bec419984
+>>>>>>> de4e9bb9ecb897b68b23b05397571bd3885b0720
       </list>
     </option>
   </component>
@@ -86,7 +150,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,6 +190,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -164,12 +228,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552380672445</updated>
+<<<<<<< HEAD
       <workItem from="1552380675020" duration="3866000" />
+=======
+<<<<<<< HEAD
+      <workItem from="1552380675020" duration="1545000" />
+      <workItem from="1552382790582" duration="1657000" />
+=======
+      <workItem from="1552380675020" duration="3337000" />
+>>>>>>> e5cbd268aa2dc4299efdf89dc8dca39bec419984
+>>>>>>> de4e9bb9ecb897b68b23b05397571bd3885b0720
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="3866000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="3208000" />
+=======
+    <option name="totallyTimeSpent" value="3337000" />
+>>>>>>> de4e9bb9ecb897b68b23b05397571bd3885b0720
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -179,14 +259,34 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
+>>>>>>> e5cbd268aa2dc4299efdf89dc8dca39bec419984
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12686567" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+>>>>>>> de4e9bb9ecb897b68b23b05397571bd3885b0720
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+<<<<<<< HEAD
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.22318527" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+=======
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Version Control" order="2" />
@@ -200,15 +300,30 @@
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.32936078" />
       <window_info anchor="right" id="Database" />
+>>>>>>> e5cbd268aa2dc4299efdf89dc8dca39bec419984
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/css/theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/php/contact.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+=======
     <entry file="file://$PROJECT_DIR$/src/php/galerie.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -224,16 +339,24 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/html/cgu.html">
+>>>>>>> e5cbd268aa2dc4299efdf89dc8dca39bec419984
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/php/galerie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="56" lean-forward="true" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+=======
     <entry file="file://$PROJECT_DIR$/src/html/mention_legal.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+>>>>>>> e5cbd268aa2dc4299efdf89dc8dca39bec419984
         </state>
       </provider>
     </entry>
