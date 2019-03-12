@@ -11,8 +11,7 @@ if (isset($_POST["formconnexion"])) {
 	$login = htmlspecialchars($_POST["login"]);
 	//$mdpconnect = sha1($_POST["mdpconnect"]);
     $mdpconnect = $_POST["mdpconnect"];
-    echo $_POST['login'];
-    echo $_POST['mdpconnect'];
+    
 	if (!empty($login) AND !empty($mdpconnect)) {
 		$requser = $bdd ->prepare("SELECT * FROM logadmin WHERE login = ? AND mdp = ?");
 		$requser->execute(array($login, $mdpconnect));
