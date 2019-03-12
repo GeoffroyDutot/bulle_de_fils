@@ -93,15 +93,16 @@ if (isset($_POST["valider"])) {
 
 	</form>
 	</div>
+	<center>
+		<?php
+		if (isset($erreur)) {
+			echo $erreur;
+			# code...
+		}
+		?>
+	</center>
 
 <?php include('footer.php')?>
 
 </body>
 </html>
-
-<?php
-if (isset($erreur)) {
-	echo $erreur;
-	# code...
-}
-?>
