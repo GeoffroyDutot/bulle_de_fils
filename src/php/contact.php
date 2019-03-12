@@ -62,7 +62,7 @@ if (isset($_POST["valider"])) {
 
 <header>
     <img  id="logo" src="../images/logo.jpg">
-    <img id="entete"src="../images/couture.jpg">
+    <img id="entete"src="../images/entete.PNG">
    <!-- <strong><h1 id="titre">Galerie</h1></strong> -->
 </header>
 
