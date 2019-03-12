@@ -3,7 +3,38 @@ session_start();
 $bdd = new PDO('mysql:host=localhost;dbname=bulledefil;charset=utf8', 'root', '');
 
 $requete = $bdd->query("SELECT * from commandes");
-$commandes = $requete->fetchAll(); ?>
+$commandes = $requete->fetchAll(); 
+
+
+if(isset($_FILES['image'])){
+    $errors= array();
+    $file_name = $_FILES['image']['name'];
+    $file_size = $_FILES['image']['size'];
+    $file_tmp = $_FILES['image']['tmp_name'];
+    $file_type = $_FILES['image']['type'];
+    $exploded = explode('.',$_FILES['image']['name']);
+    $file_ext=strtolower(end($exploded));
+    
+    $extensions= array("jpeg","jpg","png");
+    
+    if(in_array($file_ext,$extensions)=== false){
+       $errors[]="pas bonne extension.";
+    }
+    
+    if($file_size > 2097152) {
+       $errors[]='Taille du fichier trop grand !';
+    }
+    
+    if(empty($errors)==true) {
+       move_uploaded_file($file_tmp,"../images/".$file_name);
+       //header("Location: images/$file_name");
+       echo "Deplacement reussis !";
+    }else{
+       print_r($errors);
+    }
+ }
+ 
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,5 +99,22 @@ foreach($commandes as $commande){
 }
 ?>
     </table>
+    <form action = "" method = "POST" enctype = "multipart/form-data">
+         <input type = "file" name = "image" />
+         <input type = "submit"/>
+			
+         <ul>
+            <li>Sent file: <?php if(isset($_FILES['image']['name'])){ echo $_FILES['image']['name'];}  ?>
+            <li>File size: <?php if(isset($_FILES['image']['size'])){ echo $_FILES['image']['size'];}  ?>
+            <li>File type: <?php if(isset($_FILES['image']['type'])){ echo $_FILES['image']['type'];} ?>
+         </ul>
+			
+      </form>
 </body>
 </html>
+<?php
+  
+?>
+
+      
+      
