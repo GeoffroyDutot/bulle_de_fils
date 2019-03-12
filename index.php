@@ -23,8 +23,8 @@
 <div class="menu">
     <ul>
         <li><a href="./index.php">Accueil</a></li>
-        <li><a href="./src/php/galerie.php">galerie</a></li>
-        <li><a href="./src/php/contact.php">contact</a></li>
+        <li><a href="./src/php/galerie.php">Banque de tissus</a></li>
+        <li><a href="./src/php/contact.php">Contact</a></li>
     </ul>
 </div>
 
@@ -46,7 +46,7 @@
 
 <footer id="footer">
     <a href="./src/html/cgu.html">CGU</a>
-    <a href="./src/html/mention_legal.html">Mention Legal</a>
+    <a href="./src/html/mention_legal.html">Mentions Légales</a>
 </footer>
 
 </body>

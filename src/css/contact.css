@@ -3,20 +3,14 @@ body {
 }
 
 .block_articles {
-  margin-top: 450px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+  margin-top: 25%;
   margin-left: 30%;
   width: 40%;
-  min-height: 200px;
-
 }
 
 form {
-    padding:10px;
-    width:280px;
+    padding: 5%;
+    width: 40%;
     margin: auto;
 
     }
