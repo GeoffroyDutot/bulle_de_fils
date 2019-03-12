@@ -12,6 +12,7 @@
 }
 
 .fot{
-   position: absolute;
-   margin-bottom: 5%;
+   position: relative;
+   margin-left: 10%;
+   margin-right: 10%;
 }
