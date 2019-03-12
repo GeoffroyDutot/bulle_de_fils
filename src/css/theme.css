@@ -13,7 +13,7 @@ body {
 
 .menu ul {
   float: right;
-  margin-right: 10%;
+  margin-right: 30%;
   list-style-type: none;
   padding: 0px 0px 0px;
   text-align: center;
@@ -30,7 +30,7 @@ body {
 
 .menu li a {
     display:block;
-    width:500px;
+    width: 200px;
     height: 30px;
     color:#000000;
     text-decoration:none;
