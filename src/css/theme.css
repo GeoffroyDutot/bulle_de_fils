@@ -18,3 +18,8 @@ h1#titre_galerie{
     color: aquamarine;
 
 }
+#footer{
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+}
