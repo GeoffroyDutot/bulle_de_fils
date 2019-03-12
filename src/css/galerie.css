@@ -4,13 +4,13 @@ img#entete_galerie {
     width: 60%;
     text-align: center;
     position: absolute;
-    opacity: 0.7;
-
+    margin-top: 0;
+    z-index: 1;
 
 }
 
 h1#titre_galerie{
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     margin-left: 45%;
     margin-top: 5%;
@@ -18,3 +18,18 @@ h1#titre_galerie{
     color: aquamarine;
 
 }
+
+div#bande_couleur1{
+
+    background-color: aquamarine;
+    width: 20%;
+}
+
+body{
+
+    background-color: aquamarine;
+    z-index: 0;
+    margin: 0;
+
+}
+
