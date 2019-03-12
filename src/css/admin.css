@@ -6,7 +6,7 @@ table {
     th {
     font-family: monospace;
     border: thin solid #6495ed;
-
+    width: 100px;
     padding: 5px;
     background-color: #D0E3FA;
     background-image: url(sky.jpg);

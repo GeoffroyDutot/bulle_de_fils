@@ -1,4 +1,7 @@
-<?php $bdd = new PDO('mysql:host=localhost;dbname=bulledefil;charset=utf8', 'root', '');
+<?php 
+session_start();
+$bdd = new PDO('mysql:host=localhost;dbname=bulledefil;charset=utf8', 'root', '');
+
 $requete = $bdd->query("SELECT * from commandes");
 $commandes = $requete->fetchAll(); ?>
 <!DOCTYPE html>
@@ -12,6 +15,10 @@ $commandes = $requete->fetchAll(); ?>
     <script src="main.js"></script>
 </head>
 <body>
+    <?php
+    
+    if ($_SESSION['rank']=="admin"){
+    ?>
     <table>
         <tr>
             <th>
@@ -56,6 +63,8 @@ foreach($commandes as $commande){
         </td>
     </tr>
     <?php
+}}else{
+    echo "Vous n'etes pas connecté.";
 }
 ?>
     </table>
