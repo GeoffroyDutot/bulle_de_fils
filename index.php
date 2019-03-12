@@ -45,8 +45,11 @@
 </div>
 
 <footer id="footer">
+  <ul>
     <a href="./src/html/cgu.html">CGU</a>
     <a href="./src/html/mention_legal.html">Mentions Légales</a>
+  </ul>
+
 </footer>
 
 </body>
