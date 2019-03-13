@@ -4,7 +4,9 @@ $bdd = new PDO('mysql:host=localhost;dbname=bulledefil;charset=utf8', 'root', ''
 
 $requete = $bdd->query("SELECT * from commandes");
 $commandes = $requete->fetchAll(); 
-
+if(isset($_POST['supprimer'])){
+ unlink("../images/"."$fichier");
+}
 
 if(isset($_FILES['image'])){
     $errors= array();
@@ -61,10 +63,12 @@ if(isset($_FILES['image'])){
     <script src="main.js"></script>
 </head>
 <body>
+<a href="../../index.php" class="myButton">Retour à l'accueil</a>
     <?php
     
     if ($_SESSION['rank']=="admin"){
     ?>
+    <h2 id="subtitle">Outil d'administration</h2>
     <table id="outil">
     <tr>
     <th> Ajouter une image </th>
@@ -94,9 +98,47 @@ if(isset($_FILES['image'])){
    </form>
     </td>
     </tr>
+    <tr>
+        <td colspan=2>
+
+
+<table id="images">
+<?php
+$dir = "../images/";
+chdir($dir);
+array_multisort(array_map('filemtime', ($files = glob("*.{jpg,png,gif}", GLOB_BRACE))), SORT_DESC, $files);
+$i = 0;
+
+foreach($files as $image){
+   ?>
+
+<td id="images_td">
+<?php  $i += 1; 
+ ?>
+<img src="../images/<?php echo $image ?> " width="50px"> <br>
+<?php echo "<stan id=\"image_nom\">".$image."</p>" ?>
+<form method="post">
+<input type="submit" value="Supprimer" name="supprimer">
+</td>
+<?php if($i>10){
+    $i=0;
+    echo "</tr><tr>";
+} ?>
+<?php
+}
+?>
+</table>
+
+
+
+
+
+</table>
+    </td>
+    </tr>
     </table>
     <br><br>
-    <h2> Tableau des commandes </h2>
+    <h2 id="subtitle"> Tableau des commandes </h2>
     <table>
         <tr>
             <th>
