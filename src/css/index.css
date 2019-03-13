@@ -49,6 +49,7 @@ p#description{
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 1%;
+    position: relative;
 }
 
 p#description{
@@ -58,6 +59,7 @@ p#description{
 }
 }
 
+<<<<<<< HEAD
 .follow {
     margin-left: 10%;
 }
@@ -67,4 +69,20 @@ p#description{
 }
 .follow a {
     color: black;
+=======
+@media(max-width: 426px) {
+    .autor{
+        margin-top: 75%;
+        text-align: justify;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 1%;
+    }
+
+    p#description{
+
+        align: left;
+
+    }
+>>>>>>> e853ae383fe726b6689e3fd3696d963b4f3593d6
 }

@@ -11,7 +11,7 @@ if (isset($_POST["formconnexion"])) {
 	$login = htmlspecialchars($_POST["login"]);
 	//$mdpconnect = sha1($_POST["mdpconnect"]);
     $mdpconnect = sha1($_POST["mdpconnect"]);
-	
+
 	if (!empty($login) AND !empty($mdpconnect)) {
 		$requser = $bdd ->prepare("SELECT * FROM logadmin WHERE login = ? AND mdp = ?");
 		$requser->execute(array($login, $mdpconnect));
@@ -42,7 +42,8 @@ if (isset($_POST["formconnexion"])) {
 <head>
 
 	<meta charset="utf-8"></meta>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+  <link rel="shortcut icon" type="image/png" href="../images/favicon.ico"/>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
 	<title>Bulle de fil - Connexion</title>
 	<link rel="stylesheet" type="text/css" href="../css/theme.css">
 	<link rel="stylesheet" type="text/css" href="../css/connexion.css">
