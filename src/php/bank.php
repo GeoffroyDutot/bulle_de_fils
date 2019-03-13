@@ -22,7 +22,7 @@
 
 <table class="tableau_tissus">
     <tr>
-        <td><img src="../images/tissus_uni.jpg" width="390px"><br><p>tissus uni</p</td><td><img src="../images/tissus%20liberty.jpg" width="390px"><br><p>tissus liberty</p></td><td><img src="../images/tissus__etoile_gris.jpg" width="390px"><br><p>tissus étoile</p></td>
+        <td><img src="../images/tissus_uni.jpg" width-max="390px"><br><p>tissus uni</p</td><td><img src="../images/tissus%20liberty.jpg" width-max="390px"><br><p>tissus liberty</p></td><td><img src="../images/tissus__etoile_gris.jpg" width-max="390px"><br><p>tissus étoile</p></td>
     </tr>
 </table>
 
