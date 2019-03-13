@@ -9,9 +9,10 @@ if(isset($_POST['supprimer'])){
     $fichier = "../photos/".$_POST["fichier"];  
     if(file_exists ( $fichier )){
         unlink($fichier); 
+        echo "<div class='succes' >L'image ".$_POST["fichier"]." a bien été supprimée </div>";
     }
     else{
-        echo "Le fichier spécifié n'existe pas";
+        echo "<div class='error' >Le fichier spécifié n'existe pas </div>";
     }
     
 }
@@ -27,17 +28,17 @@ if(isset($_FILES['image'])){
     $extensions= array("jpeg","jpg","png");
     
     if(in_array($file_ext,$extensions)=== false){
-       $errors[]="pas bonne extension.";
+       $errors[]="<div class='error' > Mauvaise extension </div>";
     }
     
     if($file_size > 2097152) {
-       $errors[]='Taille du fichier trop grand !';
+       $errors[]="<div class='error' >Taille de l'image trop grande ! </div>";
     }
     
     if(empty($errors)==true) {
        move_uploaded_file($file_tmp,"../photos/".$file_name);
        //header("Location: photos/$file_name");
-       echo "Deplacement reussis !";
+       echo "<div class='succes' >Le fichier est bien envoyé ! </div>";
     }else{
        print_r($errors);
     }
@@ -47,15 +48,14 @@ if(isset($_FILES['image'])){
     $confirm_pwd= sha1($_POST["confirm_mdp"]);
     
     if ($pwd==$confirm_pwd) 
-								{   echo $pwd;
+								{   
                                     $sql = $bdd->prepare("UPDATE logadmin SET mdp=:pwd WHERE id_admin=1");
                                     $sql->execute(array(
                                         'pwd'=>$pwd));
 									
-									$erreur = "Votre compte a bien été créé !";
-									//header("Location: ./page_connexion.php");
-
-									}else{echo "Les mots de passe ne sont pas indentiques";}
+									echo "<div class='succes'> Votre mot de passe a bien été modifié </div>";
+								
+									}else{echo "<div class='error' >Les mots de passes ne sont pas identiques </div>";}
  }
  ?>
 <!DOCTYPE html>
