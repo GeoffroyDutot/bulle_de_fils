@@ -25,7 +25,7 @@
         <td><img src="../images/" width="300px"></td><td><img src="../images/" width="300px"></td>
     </tr>
     <tr>
-        <td><p></p></td><td><p></p></td>
+        <td><p>description bio</p></td><td><p>description oeko tex</p></td>
     </tr>
 
 </table>
