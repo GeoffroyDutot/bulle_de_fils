@@ -1,4 +1,4 @@
-
+@media(min-width: 1388px) {
 table#tableau_galerie{
 
     margin-top: 27%;
@@ -12,8 +12,55 @@ td{
     padding-top: 50px;
 }
 
-
-@media(min-width: 426px) and (max-width: 767px) {
+.images_galerie{
 
 }
 
+}
+/* Responsive pc portable */
+
+@media(min-width: 768px) and (max-width: 1388px) {
+    table#tableau_galerie {
+
+        margin-top: 27%;
+        margin-left: 22%;
+
+    }
+
+    td {
+        margin: 0;
+        padding-right: 150px;
+        padding-top: 50px;
+        max-width: 50px;
+        max-height: 50px;
+    }
+
+    .images_galerie {
+        width: 150px;
+
+    }
+}
+
+
+/* RESPONSIVE 426 to 767 */
+
+
+@media(min-width: 426px) and (max-width: 767px) {
+  table#tableau_galerie {
+
+      margin-top: 50%;
+      margin-left: 5%;
+
+  }
+
+  td {
+      margin: 0;
+      padding-right: 40px;
+      padding-top: 50px;
+  }
+
+  .images_galerie {
+      width: 100px;
+
+  }
+}

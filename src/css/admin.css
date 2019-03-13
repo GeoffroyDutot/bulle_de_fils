@@ -1,25 +1,67 @@
+@media(min-width: 1388px) {
 table {
-    border: medium solid #6495ed;
+    border: medium solid #427959;
     border-collapse: collapse;
     width: 100%;
     }
     th {
     font-family: monospace;
-    border: thin solid #6495ed;
+    border: thin solid #427959;
     width: 100px;
     padding: 5px;
-    background-color: #D0E3FA;
+    color: white;
+    background-color: #31a54e;
     background-image: url(sky.jpg);
     }
     td {
     font-family: sans-serif;
     border: thin solid #6495ed;
-   
+
     padding: 5px;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #f8fcf9;
     }
     caption {
     font-family: sans-serif;
     }
-    
+    .myButton {
+        background-color:#31a54e;
+        -moz-border-radius:28px;
+        -webkit-border-radius:28px;
+        border-radius:28px;
+        border:1px solid #18ab29;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Trebuchet MS;
+        font-size:17px;
+        padding:9px 19px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #2f6627;
+    }
+    .myButton:hover {
+        background-color:#50af68;
+    }
+    .myButton:active {
+        position:relative;
+        top:1px;
+    }
+    #subtitle{
+        text-align: center;
+        font-family: sans-serif;
+    }
+    body{
+        background-color: #edfef4;
+    }
+    #images{
+        border: none;
+    border-collapse: collapse;
+    width: 100%;
+    }
+    #images_td{
+    width: 5%;
+    border: none;
+    }
+    #image_nom{
+        font-size: 80%;
+    }

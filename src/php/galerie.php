@@ -19,22 +19,22 @@
 <?php include('navbar.php') ?>
 
 <table id="tableau_galerie">
- 
+
 
 
 <?php
- $repertoire="../images";
-$dir = '../images/*.{jpg,jpeg,gif,png}';
-$files = glob($dir,GLOB_BRACE);
+$dir = "../images/";
+chdir($dir);
+array_multisort(array_map('filemtime', ($files = glob("*.{jpg,png,gif}", GLOB_BRACE))), SORT_DESC, $files);
 $i = 0;
 
 foreach($files as $image){
    ?>
 
 <td>
-<?php  $i += 1; 
+<?php  $i += 1;
  ?>
-<img src="<?php echo $image ?> " width="300px"> 
+<img src="<?php echo $image ?> " class="images_galerie" width="300px"> 
 </td>
 <?php if($i>2){
     $i=0;
