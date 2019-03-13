@@ -49,6 +49,7 @@ p#description{
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 1%;
+    position: relative;
 }
 
 p#description{
@@ -56,4 +57,20 @@ p#description{
     align: left;
 
 }
+}
+
+@media(max-width: 426px) {
+    .autor{
+        margin-top: 75%;
+        text-align: justify;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 1%;
+    }
+
+    p#description{
+
+        align: left;
+
+    }
 }
