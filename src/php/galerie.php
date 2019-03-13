@@ -2,6 +2,7 @@
 <html lang="FR-fr">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
     <link rel="stylesheet" type="text/css" href="../css/galerie.css">
     <link rel="stylesheet" type="text/css" href="../css/theme.css">
     <title>Bulle de Fil</title>

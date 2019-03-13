@@ -42,9 +42,11 @@ if (isset($_POST["formconnexion"])) {
 <head>
 
 	<meta charset="utf-8"></meta>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
 	<title>Bulle de fil - Connexion</title>
 	<link rel="stylesheet" type="text/css" href="../css/theme.css">
 	<link rel="stylesheet" type="text/css" href="../css/connexion.css">
+
 
 </head>
 

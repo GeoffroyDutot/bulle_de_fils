@@ -52,6 +52,7 @@ if (isset($_POST["valider"])) {
 <html>
 <head>
 <meta charset="utf-8"></meta>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
 <title>Bulle de fil - Contact</title>
 <link rel="stylesheet" type="text/css" href="../css/contact.css">
 <link rel="stylesheet" type="text/css" href="../css/theme.css">

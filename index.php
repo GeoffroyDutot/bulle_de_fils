@@ -6,8 +6,10 @@
 <html lang="FR-fr">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
     <link rel="stylesheet" type="text/css" href="./src/css/theme.css">
     <link rel="stylesheet" type="text/css" href="./src/css/index.css">
+
     <title>Bulle de Fil</title>
 </head>
 <body>
