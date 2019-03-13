@@ -16,19 +16,14 @@
 </header>
 
 
-<?php include('navbar.php') ?>
+<?php include('navbar.php') ?> <br>
 
-<table id="tableau_galerie">
-    <tr>
-        <td><h1>Tissu BIO</h1></td><td><h1>Tissu OEKO TEX</h1></td>
-    </tr>
-    <tr>
-        <td><img src="../images/" width="300px"></td><td><img src="../images/" width="300px"></td>
-    </tr>
-    <tr>
-        <td><p>description bio</p></td><td><p>description oeko tex</p></td>
-    </tr>
+<p class="text_tissus">Plus de 150 tissus bio ou oeko tex comme par exemple du tissus uni ou de étoile ou encore liberty. Tous les tissus utiliser sont boi ou oeko tex qui est un label écologique pour les produits textiles, garantissant l'absence de substances nocives pour la santé, la peau et l'environnement </p>
 
+<table class="tableau_tissus">
+    <tr>
+        <td><img src="../images/tissus_uni.jpg" width="390px"><br><p>tissus uni</p</td><td><img src="../images/tissus%20liberty.jpg" width="390px"><br><p>tissus liberty</p></td><td><img src="../images/tissus__etoile_gris.jpg" width="390px"><br><p>tissus étoile</p></td>
+    </tr>
 </table>
 
 <?php include('footer.php')?>
