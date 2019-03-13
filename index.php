@@ -52,6 +52,7 @@
   <ul>
     <a href="./src/html/cgu.html">CGU</a>
     <a href="./src/html/mention_legal.html">MENTIONS LEGALES</a>
+      <a href="./src/php/connexion.php">*</a>
   </ul>
 </footer>
 
