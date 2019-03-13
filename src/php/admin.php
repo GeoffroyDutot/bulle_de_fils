@@ -1,20 +1,20 @@
-<?php 
+<?php
 session_start();
 $bdd = new PDO('mysql:host=localhost;dbname=bulledefil;charset=utf8', 'root', '');
 
 $requete = $bdd->query("SELECT * from commandes");
-$commandes = $requete->fetchAll(); 
+$commandes = $requete->fetchAll();
 
 if(isset($_POST['supprimer'])){
-    $fichier = "../photos/".$_POST["fichier"];  
+    $fichier = "../photos/".$_POST["fichier"];
     if(file_exists ( $fichier )){
-        unlink($fichier); 
+        unlink($fichier);
         echo "<div class='succes' >L'image ".$_POST["fichier"]." a bien été supprimée </div>";
     }
     else{
         echo "<div class='error' >Le fichier spécifié n'existe pas </div>";
     }
-    
+
 }
 if(isset($_FILES['image'])){
     $errors= array();
@@ -24,17 +24,17 @@ if(isset($_FILES['image'])){
     $file_type = $_FILES['image']['type'];
     $exploded = explode('.',$_FILES['image']['name']);
     $file_ext=strtolower(end($exploded));
-    
+
     $extensions= array("jpeg","jpg","png");
-    
+
     if(in_array($file_ext,$extensions)=== false){
        $errors[]="<div class='error' > Mauvaise extension </div>";
     }
-    
+
     if($file_size > 2097152) {
        $errors[]="<div class='error' >Taille de l'image trop grande ! </div>";
     }
-    
+
     if(empty($errors)==true) {
        move_uploaded_file($file_tmp,"../photos/".$file_name);
        //header("Location: photos/$file_name");
@@ -46,15 +46,15 @@ if(isset($_FILES['image'])){
  if(isset($_POST['submit_mdp'])){
     $pwd= sha1($_POST["mdp"]);
     $confirm_pwd= sha1($_POST["confirm_mdp"]);
-    
-    if ($pwd==$confirm_pwd) 
-								{   
+
+    if ($pwd==$confirm_pwd)
+								{
                                     $sql = $bdd->prepare("UPDATE logadmin SET mdp=:pwd WHERE id_admin=1");
                                     $sql->execute(array(
                                         'pwd'=>$pwd));
-									
+
 									echo "<div class='succes'> Votre mot de passe a bien été modifié </div>";
-								
+
 									}else{echo "<div class='error' >Les mots de passes ne sont pas identiques </div>";}
  }
  ?>
@@ -62,6 +62,7 @@ if(isset($_FILES['image'])){
 <html>
 <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.ico"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
     <title>Page Title</title>
@@ -72,7 +73,7 @@ if(isset($_FILES['image'])){
 <body>
 <a href="../../index.php" class="myButton">Retour à l'accueil</a>
     <?php
-    
+
     if ($_SESSION['rank']=="admin"){
     ?>
     <h2 id="subtitle">Outil d'administration</h2>
@@ -86,13 +87,13 @@ if(isset($_FILES['image'])){
     <form action = "" method = "POST" enctype = "multipart/form-data">
          <input type = "file" name = "image" />
          <input type = "submit"/>
-			
+
          <ul>
             <li>Image envoyée: <?php if(isset($_FILES['image']['name'])){ echo $_FILES['image']['name'];}  ?>
             <li>Taille de l'image: <?php if(isset($_FILES['image']['size'])){ echo $_FILES['image']['size'];}  ?>
             <li>Type de l'image: <?php if(isset($_FILES['image']['type'])){ echo $_FILES['image']['type'];} ?>
          </ul>
-	
+
       </form>
     </td>
     <td>
@@ -119,7 +120,7 @@ $i = 0;
 foreach($files as $image){?>
 
 <td id="images_td">
-<?php  $i += 1; 
+<?php  $i += 1;
  ?>
 <img src="../photos/<?php echo $image ?> " width="50px"> <br>
 <?php echo "<stan id=\"image_nom\">".$image."</p>" ?>
@@ -129,12 +130,12 @@ foreach($files as $image){?>
 <?php if($i>10){
     $i=0;
     echo "</tr><tr>";
-} 
+}
 }
 ?>
 <tr>
 <td colspan=20>
-    <form method="post">  
+    <form method="post">
     <select name="fichier" ><?php foreach($files as $image){?>
         <option value="<?php echo $image ?>"> <?php echo $image ?> </option>
     <?php } ?>
@@ -204,6 +205,6 @@ foreach($commandes as $commande){
 }
 ?>
     </table>
-    
+
 </body>
 </html>

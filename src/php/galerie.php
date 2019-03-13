@@ -2,6 +2,7 @@
 <html lang="FR-fr">
 <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.ico"/>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
     <link rel="stylesheet" type="text/css" href="../css/galerie.css">
     <link rel="stylesheet" type="text/css" href="../css/theme.css">
@@ -34,7 +35,7 @@ foreach($files as $image){
 <td>
 <?php  $i += 1;
  ?>
-<img src="../photos/<?php echo $image ?> " class="images_galerie" width="300px"> 
+<img src="../photos/<?php echo $image ?> " class="images_galerie" width="300px">
 </td>
 <?php if($i>2){
     $i=0;
