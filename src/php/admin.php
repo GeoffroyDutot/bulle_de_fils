@@ -4,10 +4,17 @@ $bdd = new PDO('mysql:host=localhost;dbname=bulledefil;charset=utf8', 'root', ''
 
 $requete = $bdd->query("SELECT * from commandes");
 $commandes = $requete->fetchAll(); 
-if(isset($_POST['supprimer'])){
- unlink("../images/"."$fichier");
-}
 
+if(isset($_POST['supprimer'])){
+    $fichier = "../images/".$_POST["fichier"];  
+    if(file_exists ( $fichier )){
+        unlink($fichier); 
+    }
+    else{
+        echo "Le fichier spécifié n'existe pas";
+    }
+    
+}
 if(isset($_FILES['image'])){
     $errors= array();
     $file_name = $_FILES['image']['name'];
@@ -109,24 +116,33 @@ chdir($dir);
 array_multisort(array_map('filemtime', ($files = glob("*.{jpg,png,gif}", GLOB_BRACE))), SORT_DESC, $files);
 $i = 0;
 
-foreach($files as $image){
-   ?>
+foreach($files as $image){?>
 
 <td id="images_td">
 <?php  $i += 1; 
  ?>
 <img src="../images/<?php echo $image ?> " width="50px"> <br>
 <?php echo "<stan id=\"image_nom\">".$image."</p>" ?>
-<form method="post">
-<input type="submit" value="Supprimer" name="supprimer">
+<?php echo $i ?>
+
 </td>
 <?php if($i>10){
     $i=0;
     echo "</tr><tr>";
-} ?>
-<?php
+} 
 }
 ?>
+<tr>
+<td colspan=20>
+    <form method="post"> oui 
+    <select name="fichier" ><?php foreach($files as $image){?>
+        <option value="<?php echo $image ?>"> <?php echo $image ?> </option>
+    <?php } ?>
+    </select>
+    <input type="submit" value="Supprimer !" name="supprimer">
+    </form>
+</td>
+    </tr>
 </table>
 
 
@@ -191,9 +207,3 @@ foreach($commandes as $commande){
     
 </body>
 </html>
-<?php
-  
-?>
-
-      
-      
