@@ -17,16 +17,15 @@
 
 <?php include('navbar.php') ?>
 
-<table id="tableau_fil">
+<table id="tableau_galerie">
     <tr>
-        <td><h1>Tissu BIO</h1></td>
-        <td><img src="../images/" width="300px"></td>
-        <td><p></p></td>
+        <td><h1>Tissu BIO</h1></td><td><h1>Tissu OEKO TEX</h1></td>
     </tr>
     <tr>
-        <td><h1>Tissu OEKO TEX</h1></td>
-        <td><img src="../images/" width="300px"></td>
-        <td><p></p></td>
+        <td><img src="../images/" width="300px"></td><td><img src="../images/" width="300px"></td>
+    </tr>
+    <tr>
+        <td><p></p></td><td><p></p></td>
     </tr>
 
 </table>
