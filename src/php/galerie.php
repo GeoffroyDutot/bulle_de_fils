@@ -18,32 +18,31 @@
 <?php include('navbar.php') ?>
 
 <table id="tableau_galerie">
-    <tr>
-        <td> <img src="../images/couture.jpg" width="300px"></td>
-        <td> <img src="../images/couture.jpg" width="300px"></td>
-        <td> <img src="../images/couture.jpg" width="300px"></td>
-    </tr>
+ 
 
-    <tr>
-        <td> <img src="../images/couture.jpg" width="300px"></td>
-        <td> <img src="../images/couture.jpg" width="300px"></td>
-        <td> <img src="../images/couture.jpg" width="300px"></td>
-    </tr>
 
-    <tr>
-        <td> <img src="../images/couture.jpg" width="300px"></td>
-        <td> <img src="../images/couture.jpg" width="300px"></td>
-        <td> <img src="../images/couture.jpg" width="300px"></td>
-    </tr>
+<?php
+ $repertoire="../images";
+$dir = '../images/*.{jpg,jpeg,gif,png}';
+$files = glob($dir,GLOB_BRACE);
+$i = 0;
 
-    <tr>
-        <td> <img src="../images/couture.jpg" width="300px"></td>
-        <td> <img src="../images/couture.jpg" width="300px"></td>
-        <td> <img src="../images/couture.jpg" width="300px"></td>
-    </tr>
+foreach($files as $image){
+   ?>
 
+<td>
+<?php  $i += 1; 
+ ?>
+<img src="<?php echo $image ?> " width="300px"> 
+</td>
+<?php if($i>2){
+    $i=0;
+    echo "</tr><tr>";
+} ?>
+<?php
+}
+?>
 </table>
-
 <?php include('footer.php')?>
 
 </body>
