@@ -1,14 +1,14 @@
 @media(min-width: 1388px) {
-.text_tissus{
-    margin-top: 30%;
-    margin-left: 14%;
-    margin-right: 14%;
-    text-align: justify;
-}
+    .text_tissus{
+        margin-top: 30%;
+        margin-left: 14%;
+        margin-right: 14%;
+        text-align: justify;
+    }
 
-.tableau_tissus{
-    margin-left: 8%;
-    text-align: center;
-    margin-right: 8%;
-}
+    .tableau_tissus{
+        margin-left: 14%;
+        text-align: center;
+        margin-right: 8%;
+    }
 }
