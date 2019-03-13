@@ -49,11 +49,11 @@
 </p>
 </div>
 <div class="follow">
-    <p>Vous pouvvez me suivre sur les lien suivant :</p>
-    <ul>
-        <li><a href="https://www.facebook.com/bulledefil/"><img src="src/images/Facebook-logo.png" width="50px"></a></li>
-        <li><a href="https://www.instagram.com/bulledefil/"><img src="src/images/instagram.png" width="50px"></a></li>
-        <li><a href="https://www.etsy.com/fr/shop/bulledefil?fbclid=IwAR2Fr7S2dXXVn0s2KjHjuwyoxam2hRSo5cqJN9UPfvNzuoVUgndqHYthhKQ#items"><img src="src/images/etsy.png" width="50px"></a></li>
+    <p>Vous pouvez me suivre sur les liens suivants :</p>
+
+        <a href="https://www.facebook.com/bulledefil/"><img src="src/images/Facebook-logo.png" width="85px"></a>
+        <a href="https://www.instagram.com/bulledefil/"><img src="src/images/instagram.png" width="75px"></a>
+        <a href="https://www.etsy.com/fr/shop/bulledefil?fbclid=IwAR2Fr7S2dXXVn0s2KjHjuwyoxam2hRSo5cqJN9UPfvNzuoVUgndqHYthhKQ#items"><img src="src/images/etsy.png" width="75px"></a>
     </ul>
 </div>
 

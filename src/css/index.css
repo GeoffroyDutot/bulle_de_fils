@@ -62,13 +62,8 @@ p#description{
 .follow {
     margin-left: 10%;
 }
-.follow ul {
-    padding:0;
-    list-style-type:none;
-}
-.follow a {
-    color: black;
-  }
+
+
 @media(max-width: 426px) {
     .autor{
         margin-top: 75%;
@@ -84,3 +79,4 @@ p#description{
 
     }
 }
+
