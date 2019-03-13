@@ -18,7 +18,7 @@
 
 <?php include('navbar.php') ?> <br>
 
-<p class="text_tissus">Plus de 150 tissus bio ou oeko tex comme par exemple du tissus uni ou de étoile ou encore liberty. Tous les tissus utiliser sont boi ou oeko tex qui est un label écologique pour les produits textiles, garantissant l'absence de substances nocives pour la santé, la peau et l'environnement </p>
+<p class="text_tissus">Plus de 150 tissus bio ou oeko tex comme par exemple du tissus uni ou étoile ou encore liberty. Tous les tissus utilisés sont bios ou oeko tex, un label écologique pour les produits textiles, garantissant l'absence de substances nocives pour la santé, la peau et l'environnement. </p>
 
 <table class="tableau_tissus">
     <tr>
