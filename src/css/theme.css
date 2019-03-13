@@ -35,6 +35,7 @@ h1#titre{
     position: absolute;
     top: 40%;
     width: 100%;
+    margin-left: 6%;
 }
 
 .menu ul {
@@ -80,7 +81,7 @@ h1#titre{
 .menu li ul {
         position:absolute;
         }
-
+/*
 footer{
 
   margin-top: 2%;
@@ -91,6 +92,32 @@ footer{
   text-align: center;
   background-color: #3CD1BD;
   width: 100%;
+}
+*/
+
+footer#relative{
+    position: relative;
+    margin-top: 2%;
+    margin-top: 1%;
+    padding-top: 1%;
+    bottom: 0px;
+    float: left;
+    text-align: center;
+    background-color: #3CD1BD;
+    width: 100%;
+}
+
+
+footer#absolute{
+    position: absolute;
+    margin-top: 2%;
+    margin-top: 1%;
+    padding-top: 1%;
+    bottom: 0px;
+    float: left;
+    text-align: center;
+    background-color: #3CD1BD;
+    width: 100%;
 }
 
 footer a {
