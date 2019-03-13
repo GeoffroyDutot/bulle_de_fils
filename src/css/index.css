@@ -1,3 +1,5 @@
+/* CSS 426 to 767 */
+@media(min-width: 1388px) {
 .autor{
     margin-top: 30%;
     text-align: justify;
@@ -12,4 +14,21 @@ p#description{
 
 }
 
-/* CSS Petit */
+}
+
+/* CSS 426 to 767 */
+@media(min-width: 426px) and (max-width: 767px) {
+.autor{
+    margin-top: 65%;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 1%;
+}
+
+p#description{
+
+    align: left;
+
+}
+}
