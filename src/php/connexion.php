@@ -44,13 +44,11 @@ if (isset($_POST["formconnexion"])) {
 	<meta charset="utf-8"></meta>
 	<title>Bulle de fil - Connexion</title>
 	<link rel="stylesheet" type="text/css" href="../css/theme.css">
+	<link rel="stylesheet" type="text/css" href="../css/connexion.css">
 
 </head>
 
 <body>
-
-
-
 
 		<div align="center" class="connexion">
 			<form method="POST" action="">
@@ -64,21 +62,21 @@ if (isset($_POST["formconnexion"])) {
  		<input type="password" name="mdpconnect" placeholder="Mot de passe"><br><br>
 		<input type="submit" value="Se connecter" name="formconnexion"><br>
 
-
 			</center>
 			</table>
 			</form>
 			<br>
-		</div>
 
-		<center>
-			<?php
-			if (isset($erreur)) {
-				echo $erreur;
-				# code...
-			}
-			?>
-		</center>
+			<center>
+				<?php
+				if (isset($erreur)) {
+					echo $erreur;
+					# code...
+				}
+				?>
+			</center>
+
+		</div>
 
 </body>
 </html>
