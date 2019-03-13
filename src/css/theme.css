@@ -37,13 +37,12 @@
         background-attachment: fixed;
         position: absolute;
         top: 50%;
-        width: 100%;
-        margin-left: 13.7%;
+        width: 80%;
+        left : 20%;
     }
 
     .menu ul {
-        float: right;
-        margin-right: 35%;
+
         list-style-type: none;
         text-align: center;
     }

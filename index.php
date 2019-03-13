@@ -32,7 +32,9 @@
 </div>
 
 <div class="autor">
-<h1>La creatice </h1> <img src="./src/image/im.jpg"><!-- image creatice -->
+<h1>Sophie Petitjean </h1>
+
+ <!-- <img src="./src/image/im.jpg">          image creatice -->
 
 <p id="description"> Couturière indépendante et passionné  depuis une vingtaine d'années, je réalise principalement des accessoires esthétique comme des sacs, trousses pour faciliter la vie de chacun au quotidien
 
