@@ -1,3 +1,4 @@
+@media(min-width: 1388px) {
 table {
     border: medium solid #427959;
     border-collapse: collapse;
@@ -14,8 +15,8 @@ table {
     }
     td {
     font-family: sans-serif;
-    border: thin solid #427959;
-   
+    border: thin solid #6495ed;
+
     padding: 5px;
     text-align: center;
     background-color: #f8fcf9;

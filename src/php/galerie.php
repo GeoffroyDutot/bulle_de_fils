@@ -19,7 +19,7 @@
 <?php include('navbar.php') ?>
 
 <table id="tableau_galerie">
- 
+
 
 
 <?php
@@ -32,9 +32,9 @@ foreach($files as $image){
    ?>
 
 <td>
-<?php  $i += 1; 
+<?php  $i += 1;
  ?>
-<img src="../images/<?php echo $image ?> " width="300px"> 
+<img src="<?php echo $image ?> " class="images_galerie" width="300px"> 
 </td>
 <?php if($i>2){
     $i=0;
