@@ -34,7 +34,7 @@ foreach($files as $image){
 <td>
 <?php  $i += 1;
  ?>
-<img src="<?php echo $image ?> " class="images_galerie" width="300px"> 
+<img src="../photos/<?php echo $image ?> " class="images_galerie" width="300px"> 
 </td>
 <?php if($i>2){
     $i=0;

@@ -6,7 +6,7 @@ $requete = $bdd->query("SELECT * from commandes");
 $commandes = $requete->fetchAll(); 
 
 if(isset($_POST['supprimer'])){
-    $fichier = "../images/".$_POST["fichier"];  
+    $fichier = "../photos/".$_POST["fichier"];  
     if(file_exists ( $fichier )){
         unlink($fichier); 
     }
@@ -35,8 +35,8 @@ if(isset($_FILES['image'])){
     }
     
     if(empty($errors)==true) {
-       move_uploaded_file($file_tmp,"../images/".$file_name);
-       //header("Location: images/$file_name");
+       move_uploaded_file($file_tmp,"../photos/".$file_name);
+       //header("Location: photos/$file_name");
        echo "Deplacement reussis !";
     }else{
        print_r($errors);
@@ -111,7 +111,7 @@ if(isset($_FILES['image'])){
 
 <table id="images">
 <?php
-$dir = "../images/";
+$dir = "../photos/";
 chdir($dir);
 array_multisort(array_map('filemtime', ($files = glob("*.{jpg,png,gif}", GLOB_BRACE))), SORT_DESC, $files);
 $i = 0;
@@ -121,7 +121,7 @@ foreach($files as $image){?>
 <td id="images_td">
 <?php  $i += 1; 
  ?>
-<img src="../images/<?php echo $image ?> " width="50px"> <br>
+<img src="../photos/<?php echo $image ?> " width="50px"> <br>
 <?php echo "<stan id=\"image_nom\">".$image."</p>" ?>
 
 
