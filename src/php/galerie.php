@@ -23,7 +23,7 @@
 
 
 <?php
-$dir = "../images/";
+$dir = "../photos/";
 chdir($dir);
 array_multisort(array_map('filemtime', ($files = glob("*.{jpg,png,gif}", GLOB_BRACE))), SORT_DESC, $files);
 $i = 0;
