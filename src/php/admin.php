@@ -33,7 +33,21 @@ if(isset($_FILES['image'])){
        print_r($errors);
     }
  }
- 
+ if(isset($_POST['submit_mdp'])){
+    $pwd= sha1($_POST["mdp"]);
+    $confirm_pwd= sha1($_POST["confirm_mdp"]);
+    
+    if ($pwd==$confirm_pwd) 
+								{   echo $pwd;
+                                    $sql = $bdd->prepare("UPDATE logadmin SET mdp=:pwd WHERE id_admin=1");
+                                    $sql->execute(array(
+                                        'pwd'=>$pwd));
+									
+									$erreur = "Votre compte a bien été créé !";
+									//header("Location: ./page_connexion.php");
+
+									}else{echo "Les mots de passe ne sont pas indentiques";}
+ }
  ?>
 <!DOCTYPE html>
 <html>
@@ -51,6 +65,38 @@ if(isset($_FILES['image'])){
     
     if ($_SESSION['rank']=="admin"){
     ?>
+    <table id="outil">
+    <tr>
+    <th> Ajouter une image </th>
+    <th> Changer le mot de passe </th>
+    </tr>
+    <tr>
+    <td>
+    <form action = "" method = "POST" enctype = "multipart/form-data">
+         <input type = "file" name = "image" />
+         <input type = "submit"/>
+			
+         <ul>
+            <li>Image envoyée: <?php if(isset($_FILES['image']['name'])){ echo $_FILES['image']['name'];}  ?>
+            <li>Taille de l'image: <?php if(isset($_FILES['image']['size'])){ echo $_FILES['image']['size'];}  ?>
+            <li>Type de l'image: <?php if(isset($_FILES['image']['type'])){ echo $_FILES['image']['type'];} ?>
+         </ul>
+	
+      </form>
+    </td>
+    <td>
+    <form method="post">
+    Nouveau mot de passe : <input type="password" name="mdp" placeholder="Mot de Passe" maxlength="20"> <br>
+
+   Confirmation du mot de passe : <input type="password" name="confirm_mdp" placeholder="Mot de Passe" maxlength="20"><br>
+
+   <input type="submit" name="submit_mdp">
+   </form>
+    </td>
+    </tr>
+    </table>
+    <br><br>
+    <h2> Tableau des commandes </h2>
     <table>
         <tr>
             <th>
@@ -100,17 +146,7 @@ foreach($commandes as $commande){
 }
 ?>
     </table>
-    <form action = "" method = "POST" enctype = "multipart/form-data">
-         <input type = "file" name = "image" />
-         <input type = "submit"/>
-			
-         <ul>
-            <li>Sent file: <?php if(isset($_FILES['image']['name'])){ echo $_FILES['image']['name'];}  ?>
-            <li>File size: <?php if(isset($_FILES['image']['size'])){ echo $_FILES['image']['size'];}  ?>
-            <li>File type: <?php if(isset($_FILES['image']['type'])){ echo $_FILES['image']['type'];} ?>
-         </ul>
-			
-      </form>
+    
 </body>
 </html>
 <?php
