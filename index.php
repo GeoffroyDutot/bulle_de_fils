@@ -44,7 +44,7 @@
 </p>
 </div>
 
-<footer id="absolute">
+<footer id="relative">
   <ul>
     <a href="./src/html/cgu.html">CGU</a>
     <a href="./src/html/mention_legal.html">MENTIONS LEGALES</a>

@@ -14,7 +14,7 @@ img#entete{
 }
 
 #logo{
-    margin-left: 2%;
+    margin-left: -1%;
     position: absolute;
     top: 0;
 }
@@ -33,9 +33,9 @@ h1#titre{
 .menu {
     background-attachment: fixed;
     position: absolute;
-    top: 40%;
+    top: 50%;
     width: 100%;
-    margin-left: 6%;
+    margin-left: 13.7%;
 }
 
 .menu ul {
@@ -108,7 +108,7 @@ footer#relative{
 }
 
 
-footer#absolute{
+/* footer#absolute{
     position: absolute;
     margin-top: 2%;
     margin-top: 1%;
@@ -118,9 +118,8 @@ footer#absolute{
     text-align: center;
     background-color: #3CD1BD;
     width: 100%;
-}
+} */
 
 footer a {
     color: black;
 }
-
