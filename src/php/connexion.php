@@ -67,7 +67,7 @@ if (isset($_POST["formconnexion"])) {
 			</form>
 			<br>
 
-			<center>
+			<center class="erreur_connexion">
 				<?php
 				if (isset($erreur)) {
 					echo $erreur;

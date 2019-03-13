@@ -5,6 +5,10 @@
   width: 40%;
 }
 
+.erreur_connexion{
+  color : red;
+}
+
 form {
     padding: 5%;
     width: 40%;

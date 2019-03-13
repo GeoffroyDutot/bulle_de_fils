@@ -92,8 +92,10 @@ if (isset($_POST["valider"])) {
 
 
 	</form>
-	</div>
-	<center>
+
+	<br />
+
+	<center class="erreur_connexion">
 		<?php
 		if (isset($erreur)) {
 			echo $erreur;
@@ -101,6 +103,9 @@ if (isset($_POST["valider"])) {
 		}
 		?>
 	</center>
+
+	</div>
+
 
 <?php include('footer.php')?>
 
