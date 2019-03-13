@@ -70,7 +70,7 @@ if (isset($_POST["valider"])) {
 <?php include('navbar.php') ?>
 
 <div class="block_articles">
-	<h1 style="text-align: center;">Contact</h1>
+	<center> <h1 class="contact">Contact</h1> </center>
 	<form action="" method="POST">
 	<table id="table">
 
