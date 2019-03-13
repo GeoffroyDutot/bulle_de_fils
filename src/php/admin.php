@@ -123,7 +123,7 @@ foreach($files as $image){?>
  ?>
 <img src="../images/<?php echo $image ?> " width="50px"> <br>
 <?php echo "<stan id=\"image_nom\">".$image."</p>" ?>
-<?php echo $i ?>
+
 
 </td>
 <?php if($i>10){
