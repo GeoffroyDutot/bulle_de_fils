@@ -22,10 +22,10 @@
 
 <div class="menu">
     <ul>
-        <li><a href="./index.php">Accueil</a></li>
-        <li><a href="./src/php/galerie.php">Galerie</a></li>
-        <li><a href="./src/php/bank.php">Banque de tissus</a></li>
-        <li><a href="./src/php/contact.php">Contact</a></li>
+        <li><a href="./index.php">ACCUEIL</a></li>
+        <li><a href="./src/php/galerie.php">GALERIE</a></li>
+        <li><a href="./src/php/bank.php">BANQUE DE TISSUS</a></li>
+        <li><a href="./src/php/contact.php">CONTACT</a></li>
     </ul>
 </div>
 
@@ -48,7 +48,7 @@
 <footer id="footer">
   <ul>
     <a href="./src/html/cgu.html">CGU</a>
-    <a href="./src/html/mention_legal.html">Mentions Légales</a>
+    <a href="./src/html/mention_legal.html">MENTIONS LEGALES</a>
   </ul>
 
 </footer>
