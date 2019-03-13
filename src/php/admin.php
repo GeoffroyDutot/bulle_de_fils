@@ -134,7 +134,7 @@ foreach($files as $image){?>
 ?>
 <tr>
 <td colspan=20>
-    <form method="post"> oui 
+    <form method="post">  
     <select name="fichier" ><?php foreach($files as $image){?>
         <option value="<?php echo $image ?>"> <?php echo $image ?> </option>
     <?php } ?>
