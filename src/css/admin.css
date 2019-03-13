@@ -15,7 +15,7 @@ table {
     }
     td {
     font-family: sans-serif;
-    border: thin solid #6495ed;
+    border: thin solid #63c07a;
 
     padding: 5px;
     text-align: center;
@@ -64,4 +64,4 @@ table {
     }
     #image_nom{
         font-size: 80%;
-    }
+    }}
