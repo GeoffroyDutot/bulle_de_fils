@@ -290,11 +290,7 @@ if(isset($_FILES['image'])){
   <br><br>
 
 
-              <?php
-          }else{
-              echo "Vous n'etes pas connecté.";
-          }
-          ?>
+           
 
 
 
@@ -321,4 +317,9 @@ if(isset($_FILES['image'])){
 </table>
 
 </body>
+<?php
+          }else{
+              echo "Vous n'etes pas connecté.";
+          }
+          ?>
 </html>
