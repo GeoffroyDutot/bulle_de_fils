@@ -6,6 +6,7 @@ $requete = $bdd->query("SELECT * from commandes");
 $commandes = $requete->fetchAll();
 
 if(isset($_POST['supprimer'])){
+    if(isset($_POST['fichier'])){
     $fichier = "../photos/".$_POST["fichier"];
     if(file_exists ( $fichier )){
         unlink($fichier);
@@ -13,6 +14,8 @@ if(isset($_POST['supprimer'])){
     }
     else{
         echo "<div class='error' >Le fichier spécifié n'existe pas </div>";
+    }}else{
+        echo "<div class='error' >Vous n'avez pas selectionné de photos </div>";
     }
 
 }
@@ -132,8 +135,9 @@ foreach($files as $image){?>
     echo "</tr><tr>";
 }
 }
-?>
+?></table>
 <tr>
+<th colspan="20"> Supprimer une image</th></tr>
 <td colspan=20>
     <form method="post">
     <select name="fichier" ><?php foreach($files as $image){?>
@@ -144,7 +148,7 @@ foreach($files as $image){?>
     </form>
 </td>
     </tr>
-</table>
+
 
 
 
