@@ -1,6 +1,6 @@
 @media(min-width: 1388px) {
 .autor{
-    margin-top: 30%;
+    margin-top: 25%;
     text-align: justify;
     margin-left: 10%;
     margin-right: 10%;
@@ -61,6 +61,7 @@ p#description{
 
 .follow {
     margin-left: 10%;
+    margin-top: 5%;
 }
 
 

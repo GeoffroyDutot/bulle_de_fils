@@ -8,15 +8,15 @@
     }
 
     img#entete{
-        margin-left: 20%;
-        width: 60%;
+        margin-left: 30%;
+        width: 40%;
         text-align: center;
         position: absolute;
         top: 0;
     }
 
     #logo{
-        margin-left: -1%;
+        margin-left: 7%;
         position: absolute;
         top: 0;
     }
@@ -35,9 +35,9 @@
     .menu {
         background-attachment: fixed;
         position: absolute;
-        top: 50%;
-        width: 80%;
-        left : 20%;
+        top: 40%;
+        width: 50%;
+        left : 25%;
     }
 
     .menu ul {
