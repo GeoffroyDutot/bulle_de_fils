@@ -285,7 +285,7 @@ if(isset($_FILES['image'])){
 </textarea><br><br>
 <input type="submit" name="submit_description" value="Modifier">
 </td></tr>
-
+</table>
 
   <br><br>
 
@@ -301,7 +301,7 @@ if(isset($_FILES['image'])){
 
 
    
-?><br>
+<br>
 <table>
     <tr>
         <th>
@@ -318,7 +318,7 @@ if(isset($_FILES['image'])){
    <input type="submit" name="submit_mdp">
    </form>
     </td>
-    
+</table>
 
 </body>
 </html>
