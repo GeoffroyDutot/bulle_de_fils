@@ -27,7 +27,7 @@ if (isset($_POST["valider"])) {
 									$sql = $bdd->prepare("INSERT INTO commandes(prenom, nom, mail, telephone, objet) VALUES (?, ?, ?, ?, ?)");
 									$sql->execute(array(
 									    $prenom, $nom, $mail, $numero, $objet));
-									echo "<div class='succes'> Votre mot de passe a bien été modifié </div>";
+									echo "<div class='succes'> Votre message a bien été envoyé </div>";
 									//header("Location: ./index.php");
 
 									}
