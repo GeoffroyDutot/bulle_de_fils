@@ -16,7 +16,7 @@ if(isset($_POST['submit_description'])){
 
    echo "<div class='succes'> Votre message a bien été envoyé !  (rechargez la page pour voir les modifications) </div>";
 
-   }else{echo "aie";}
+   }
 
 
 if(isset($_POST['supprimer'])){
@@ -174,7 +174,7 @@ foreach($files as $image){?>
 <th> Changer la description de l'accueil </th>
 <tr> <td>
 <textarea style="margin: 0px; width: 90%; height: 200px;" name="text_description"><?php echo $description_req['text'];?>
-</textarea><br><br><?php echo $description_req['text'];?>
+</textarea><br><br>
 <input type="submit" name="submit_description" value="Modifier">
 </td></tr>
 
