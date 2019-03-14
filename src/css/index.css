@@ -29,7 +29,7 @@ p#description{
 
 @media(min-width: 768px) and (max-width: 1388px) {
     .autor {
-        margin-top: 30%;
+        margin-top: 50%;
         text-align: justify;
         margin-left: 10%;
         margin-right: 10%;
@@ -46,7 +46,7 @@ p#description{
     .follow {
         margin-left: 10%;
         margin-top: 5%;
-        min-height: 142px;
+        min-height: 220px;
     }
 }
 
@@ -56,28 +56,28 @@ p#description{
 
 
 @media(min-width: 426px) and (max-width: 767px) {
-.autor{
-    margin-top: 65%;
-    text-align: justify;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 1%;
-    position: relative;
+    .autor {
+        margin-top: 65%;
+        text-align: justify;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 1%;
+        position: relative;
+    }
+
+    p#description {
+
+        align: left;
+
+    }
+
+
+    .follow {
+        margin-left: 10%;
+        margin-top: 5%;
+        min-height: 100px;
+    }
 }
-
-p#description{
-
-    align: left;
-
-}
-}
-
-.follow {
-    margin-left: 10%;
-    margin-top: 5%;
-    min-height: 142px;
-}
-
 
 @media(max-width: 426px) {
     .autor{
