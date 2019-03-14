@@ -28,11 +28,30 @@
 <p class="text_tissus">Plus de 150 tissus bio ou oeko tex comme par exemple du tissus uni ou étoile ou encore liberty. Tous les tissus utilisés sont bios ou oeko tex, un label écologique pour les produits textiles, garantissant l'absence de substances nocives pour la santé, la peau et l'environnement. </p>
 
 <center>
-  <table class="tableau_tissus">
-      <tr>
-          <td><img src="../images/tissus_uni.jpg" class="imgtissu"><br><p>tissus uni</p</td><td><img src="../images/tissus%20liberty.jpg" class="imgtissu"><br><p>tissus liberty</p></td><td><img src="../images/tissus__etoile_gris.jpg" class="imgtissu"><br><p>tissus étoile</p></td>
-      </tr>
-  </table>
+<table class="tableau_tissus">
+ 
+<?php
+$dir = "../photos/";
+chdir($dir);
+array_multisort(array_map('filemtime', ($files = glob("*.{jpg,png,gif}", GLOB_BRACE))), SORT_DESC, $files);
+$i = 0;
+
+foreach($files as $image){
+   ?>
+
+<td>
+<?php  $i += 1;
+ ?>
+<img src="../photos/<?php echo $image ?> " class="images_galerie" width="300px">
+</td>
+<?php if($i>2){
+    $i=0;
+    echo "</tr><tr>";
+} ?>
+<?php
+}
+?>
+</table>
 </center>
 
 <!-- Pied de page -->
