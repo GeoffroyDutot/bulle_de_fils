@@ -27,7 +27,7 @@ $commandes = $requete_desc->fetchAll();
 </head>
 <body>
 <a href="../../index.php" class="myButton">Retour à l'accueil</a>
-<a href="admin.php" class="myButton">Administration</a>
+<a href="admin.php" class="myButton" id="button_right">Administration</a>
     <?php
 
     if ($_SESSION['rank']=="admin"){

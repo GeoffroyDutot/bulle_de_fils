@@ -5,9 +5,20 @@ table {
     border: medium solid #427959;
     border-collapse: collapse;
     width: 100%;
+
+    }
+    table#images{
+        border: medium solid #427959;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    h2#subtitle{
+        font-size: 54px;
+        font-family: Corbel;
     }
     th {
-    font-family: monospace;
+    font-family: Corbel;
+    font-size: 25px;
     border: thin solid #427959;
     width: 100px;
     padding: 5px;
@@ -35,12 +46,19 @@ table {
         display:inline-block;
         cursor:pointer;
         color:#ffffff;
-        font-family:Trebuchet MS;
-        font-size:17px;
+        font-weight: bold;
+        font-family: Corbel;
+        font-size:24px;
         padding:9px 19px;
         text-decoration:none;
         text-shadow:0px 1px 0px #2f6627;
     }
+   a#button_right{
+       position: absolute;
+
+       margin-left: 75%;
+
+   }
     .myButton:hover {
         background-color:#50af68;
     }
@@ -63,6 +81,334 @@ table {
     #images_td{
     width: 5%;
     border: none;
+    }
+    #image_nom{
+        font-size: 80%;
+    }}
+.error{
+    background-color: #f3a0a0;
+    padding: 1%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 120%;
+    position: absolute;
+    width: 60%;
+    left: 20%;
+}
+.succes{
+    background-color: #a0f3a0;
+    padding: 1%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 120%;
+    position: absolute;
+    width: 60%;
+    left: 20%;
+}
+#info_image li{
+    text-decoration: none;
+}
+
+
+@media(min-width: 768px) and (max-width: 1388px) {
+    table {
+        border: medium solid #427959;
+        border-collapse: collapse;
+        width: 100%;
+
+    }
+    table#images{
+        border: medium solid #427959;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    h2#subtitle{
+        font-size: 54px;
+        font-family: Corbel;
+    }
+    th {
+        font-family: Corbel;
+        font-size: 25px;
+        border: thin solid #427959;
+        width: 100px;
+        padding: 5px;
+        color: white;
+        background-color: #31a54e;
+        background-image: url(sky.jpg);
+    }
+    td {
+        font-family: sans-serif;
+        border: thin solid #63c07a;
+
+        padding: 5px;
+        text-align: center;
+        background-color: #f8fcf9;
+    }
+    caption {
+        font-family: sans-serif;
+    }
+    .myButton {
+        background-color:#31a54e;
+        -moz-border-radius:28px;
+        -webkit-border-radius:28px;
+        border-radius:28px;
+        border:1px solid #18ab29;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-weight: bold;
+        font-family: Corbel;
+        font-size:24px;
+        padding:9px 19px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #2f6627;
+    }
+    a#button_right{
+        position: absolute;
+
+        margin-left: 75%;
+
+    }
+    .myButton:hover {
+        background-color:#50af68;
+    }
+    .myButton:active {
+        position:relative;
+        top:1px;
+    }
+    #subtitle{
+        text-align: center;
+        font-family: sans-serif;
+    }
+    body{
+        background-color: #edfef4;
+    }
+    #images{
+        border: none;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    #images_td{
+        width: 5%;
+        border: none;
+    }
+    #image_nom{
+        font-size: 80%;
+    }}
+.error{
+    background-color: #f3a0a0;
+    padding: 1%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 120%;
+    position: absolute;
+    width: 60%;
+    left: 20%;
+}
+.succes{
+    background-color: #a0f3a0;
+    padding: 1%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 120%;
+    position: absolute;
+    width: 60%;
+    left: 20%;
+}
+#info_image li{
+    text-decoration: none;
+}
+
+@media(min-width: 426px) and (max-width: 767px) {
+    table {
+        border: medium solid #427959;
+        border-collapse: collapse;
+        width: 100%;
+
+    }
+    table#images{
+        border: medium solid #427959;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    h2#subtitle{
+        font-size: 54px;
+        font-family: Corbel;
+    }
+    th {
+        font-family: Corbel;
+        font-size: 25px;
+        border: thin solid #427959;
+        width: 100px;
+        padding: 5px;
+        color: white;
+        background-color: #31a54e;
+        background-image: url(sky.jpg);
+    }
+    td {
+        font-family: sans-serif;
+        border: thin solid #63c07a;
+
+        padding: 5px;
+        text-align: center;
+        background-color: #f8fcf9;
+    }
+    caption {
+        font-family: sans-serif;
+    }
+    .myButton {
+        background-color:#31a54e;
+        -moz-border-radius:28px;
+        -webkit-border-radius:28px;
+        border-radius:28px;
+        border:1px solid #18ab29;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-weight: bold;
+        font-family: Corbel;
+        font-size:24px;
+        padding:9px 19px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #2f6627;
+    }
+    a#button_right{
+        position: absolute;
+
+        margin-left: 75%;
+
+    }
+    .myButton:hover {
+        background-color:#50af68;
+    }
+    .myButton:active {
+        position:relative;
+        top:1px;
+    }
+    #subtitle{
+        text-align: center;
+        font-family: sans-serif;
+    }
+    body{
+        background-color: #edfef4;
+    }
+    #images{
+        border: none;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    #images_td{
+        width: 5%;
+        border: none;
+    }
+    #image_nom{
+        font-size: 80%;
+    }}
+.error{
+    background-color: #f3a0a0;
+    padding: 1%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 120%;
+    position: absolute;
+    width: 60%;
+    left: 20%;
+}
+.succes{
+    background-color: #a0f3a0;
+    padding: 1%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 120%;
+    position: absolute;
+    width: 60%;
+    left: 20%;
+}
+#info_image li{
+    text-decoration: none;
+}
+
+@media(max-width: 426px) {
+    table {
+        border: medium solid #427959;
+        border-collapse: collapse;
+        width: 100%;
+
+    }
+    table#images{
+        border: medium solid #427959;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    h2#subtitle{
+        font-size: 54px;
+        font-family: Corbel;
+    }
+    th {
+        font-family: Corbel;
+        font-size: 25px;
+        border: thin solid #427959;
+        width: 100px;
+        padding: 5px;
+        color: white;
+        background-color: #31a54e;
+        background-image: url(sky.jpg);
+    }
+    td {
+        font-family: sans-serif;
+        border: thin solid #63c07a;
+
+        padding: 5px;
+        text-align: center;
+        background-color: #f8fcf9;
+    }
+    caption {
+        font-family: sans-serif;
+    }
+    .myButton {
+        background-color:#31a54e;
+        -moz-border-radius:28px;
+        -webkit-border-radius:28px;
+        border-radius:28px;
+        border:1px solid #18ab29;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-weight: bold;
+        font-family: Corbel;
+        font-size:24px;
+        padding:9px 19px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #2f6627;
+    }
+    a#button_right{
+        position: absolute;
+
+        margin-left: 75%;
+
+    }
+    .myButton:hover {
+        background-color:#50af68;
+    }
+    .myButton:active {
+        position:relative;
+        top:1px;
+    }
+    #subtitle{
+        text-align: center;
+        font-family: sans-serif;
+    }
+    body{
+        background-color: #edfef4;
+    }
+    #images{
+        border: none;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    #images_td{
+        width: 5%;
+        border: none;
     }
     #image_nom{
         font-size: 80%;

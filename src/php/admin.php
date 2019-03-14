@@ -143,7 +143,7 @@ if(isset($_FILES['image'])){
 
 <body>
 <a href="../../index.php" class="myButton">Retour à l'accueil</a>
-<a href="demandes.php" class="myButton">Tableau demandes</a>
+<a href="demandes.php" class="myButton" id="button_right">Tableau demandes</a>
     <?php
 
     if ($_SESSION['rank']=="admin"){
