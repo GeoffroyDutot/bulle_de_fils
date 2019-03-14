@@ -2,7 +2,7 @@
 
 @media(min-width: 1388px) {
     .text_tissus{
-        margin-top: 30%;
+        margin-top: 25%;
         margin-left: 14%;
         margin-right: 14%;
         text-align: justify;
@@ -13,6 +13,12 @@
         text-align: center;
         margin-right: 8%;
         min-height: 190px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+
+    }
+    .imgtissu{
+        width: 50%;
     }
 }
 
