@@ -56,7 +56,8 @@ table {
    a#button_right{
        position: absolute;
 
-       margin-left: 75%;
+       margin-left: 70%;
+       text-align: center;
 
    }
     .myButton:hover {
