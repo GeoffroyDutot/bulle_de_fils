@@ -2,19 +2,21 @@
 
 @media(min-width: 1388px) {
 .connexion {
-  margin-top : 15%;
+  margin-top : 20%;
 }
 
 .erreur_connexion{
   color : red;
 }
+
 }
 
 /* Responsive grand écran */
 
 @media(min-width: 768px) and (max-width: 1388px) {
   .connexion {
-    margin-top : 15%;
+    margin-top : 30%;
+
   }
 
   .erreur_connexion{
@@ -26,7 +28,7 @@
 
 @media(min-width: 426px) and (max-width: 767px) {
   .connexion {
-    margin-top : 15%;
+    margin-top : 50%;
   }
 
   .erreur_connexion{
@@ -38,7 +40,7 @@
 
 @media(max-width: 426px) {
   .connexion {
-    margin-top : 15%;
+    margin-top : 50%;
   }
 
   .erreur_connexion{
