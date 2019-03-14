@@ -91,11 +91,6 @@ if(isset($_FILES['image'])){
          <input type = "file" name = "image" />
          <input type = "submit"/>
 
-         <ul>
-            <li>Image envoyée: <?php if(isset($_FILES['image']['name'])){ echo $_FILES['image']['name'];}  ?>
-            <li>Taille de l'image: <?php if(isset($_FILES['image']['size'])){ echo $_FILES['image']['size'];}  ?>
-            <li>Type de l'image: <?php if(isset($_FILES['image']['type'])){ echo $_FILES['image']['type'];} ?>
-         </ul>
 
       </form>
     </td>
@@ -113,7 +108,8 @@ if(isset($_FILES['image'])){
         <td colspan=2>
 
 
-<table id="images">
+<table id="images"><tr> 
+<th colspan=20>Images</th> </tr>
 <?php
 $dir = "../photos/";
 chdir($dir);
@@ -137,7 +133,7 @@ foreach($files as $image){?>
 }
 ?></table>
 <tr>
-<th colspan="20"> Supprimer une image</th></tr>
+
 <td colspan=20>
     <form method="post">
     <select name="fichier" ><?php foreach($files as $image){?>
