@@ -67,3 +67,25 @@ td{
 
   }
 }
+
+@media(max-width: 426px) {
+    table#tableau_galerie{
+
+        margin-top: 32%;
+        margin-left: 10%;
+        min-height: 485px;
+
+    }
+
+    td{
+        margin: 0;
+        padding-right: 10px;
+        padding-top: 50px;
+    }
+
+    .images_galerie{
+        width: 75px;
+
+    }
+
+}

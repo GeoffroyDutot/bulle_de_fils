@@ -56,3 +56,25 @@
         width: 100%;
     }
 }
+
+
+@media(max-width: 426px){
+    .text_tissus{
+        margin-top: 80%;
+        margin-left: 14%;
+        margin-right: 14%;
+        text-align: justify;
+        min-height: 275px;
+    }
+
+    .tableau_tissus{
+        margin-top: -20%;
+        margin-left: 8%;
+        text-align: center;
+        margin-right: 8%;
+    }
+
+    .imgtissu{
+        width: 100%;
+    }
+}

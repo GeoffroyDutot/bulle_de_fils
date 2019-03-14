@@ -79,9 +79,11 @@ p#description{
     }
 }
 
+
+/*  Smartphones */
 @media(max-width: 426px) {
     .autor{
-        margin-top: 75%;
+        margin-top: 85%;
         text-align: justify;
         margin-left: 10%;
         margin-right: 10%;
@@ -96,7 +98,7 @@ p#description{
 
     .follow{
         margin-left: 10%;
-        margin-top: 6%;
-        min-height: 142px;
+        margin-top: 10%;
+        min-height: 240px;
     }
 }

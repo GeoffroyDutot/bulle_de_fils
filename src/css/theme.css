@@ -440,8 +440,9 @@
         background-attachment: fixed;
         position: absolute;
         top: 10%;
-        width: 100%;
-        margin-left: 13.7%;
+        width: 85%;
+        left: 15%;
+
     }
 
     .menu ul {
@@ -461,11 +462,12 @@
 
     .menu li a {
         display:block;
-        width: 200px;
+        width: 150px;
         height: 30px;
         color:#000000;
         text-decoration:none;
         padding:0px;
+        padding-top: 5%;
     }
 
     .menu li a:hover {
