@@ -79,6 +79,7 @@ if(isset($_FILES['image'])){
     $file_size = $_FILES['image_banque']['size'];
     $file_tmp = $_FILES['image_banque']['tmp_name'];
     $file_type = $_FILES['image_banque']['type'];
+    $description = $_POST['description_image'];
     $exploded = explode('.',$_FILES['image_banque']['name']);
     $file_ext=strtolower(end($exploded));
 
@@ -94,11 +95,19 @@ if(isset($_FILES['image'])){
 
     if(empty($errors)==true) {
        move_uploaded_file($file_tmp,"../banque/".$file_name);
+
+       $sql = $bdd->prepare("INSERT INTO `banquedefil`(`nom_image`, `description`) VALUES (:nom,:description)");
+                                    $sql->execute(array(
+                                        'nom'=>$file_name,
+                                        'description'=>$description));
+                                        
        //header("Location: photos/$file_name");
+
        echo "<div class='succes' >Le fichier est bien envoyé ! </div>";
     }else{
        print_r($errors);
     }
+
  }
  if(isset($_POST['submit_mdp'])){
     $pwd= sha1($_POST["mdp"]);
@@ -156,6 +165,7 @@ if(isset($_FILES['image'])){
     <td>
     <form action = "" method = "POST" enctype = "multipart/form-data">
          <input type = "file" name = "image_banque" />
+         <input type="text" name="description_image"/>
          <input type = "submit"/>
 
 
@@ -337,10 +347,7 @@ if(isset($_FILES['image'])){
 
 
 
-    <?php
-}else{
-    echo "Vous n'etes pas connecté.";
-}
+   
 ?><br>
 <table>
     <tr>
