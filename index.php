@@ -56,8 +56,8 @@
 
 <footer id="relative">
   <ul>
-    <a href="./src/html/cgu.html">CGU</a>
-    <a href="./src/html/mention_legal.html">MENTIONS LEGALES</a>
+    <u><a href="./src/html/cgu.html">CGU</a></u>&nbsp&nbsp&nbsp
+   <u><a href="./src/html/mention_legal.html">MENTIONS LEGALES</a></u>
       <a href="./src/php/connexion.php" class="co">*</a>
   </ul>
 </footer>

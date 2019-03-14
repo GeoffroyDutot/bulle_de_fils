@@ -7,6 +7,7 @@
         margin: 0;
         padding: 0;
         height: 100%;
+        font-family: Corbel;
 
     }
 
@@ -41,19 +42,23 @@
         top: 35%;
         width: 70%;
         left : 25%;
+
+
     }
 
     .menu ul {
         list-style-type: none;
         text-align: center;
+
+
+
     }
 
     .menu li {
         float:left;
         margin:auto;
-        background-color:#ffffff;
-        border-style: solid;
-        border-width: 2px;
+        background-color: #3CD1BD;
+
     }
 
     .menu li a {
@@ -64,6 +69,7 @@
         text-decoration:none;
         padding:0px;
         padding-top : 5%;
+
     }
 
     .menu li a:hover {
@@ -109,6 +115,7 @@
         text-align: center;
         background-color: #3CD1BD;
         width: 100%;
+
     }
 
 
@@ -139,6 +146,7 @@
     body {
         background-color: #edfef4;
         margin: 0;
+        font-family: Corbel;
 
 
 
@@ -190,9 +198,8 @@
 
     .menu li {
         float:left;
-        background-color:#ffffff;
-        border-style: solid;
-        border-width: 2px;
+        background-color: #3CD1BD;
+
     }
 
     .menu li a {
@@ -281,6 +288,7 @@
         margin: 0;
         padding: 0;
         height: 100%;
+        font-family: Corbel;
     }
 
     img#entete{
@@ -318,9 +326,7 @@
     .menu li {
         float:left;
         margin:auto;
-        background-color:#ffffff;
-        border-style: solid;
-        border-width: 2px;
+        background-color: #3CD1BD;
     }
 
     .menu li a {
@@ -409,6 +415,7 @@
         margin: 0;
         padding: 0;
         height: 100%;
+        font-family: Corbel;
     }
 
     img#entete{
@@ -457,9 +464,7 @@
     .menu li {
         float:left;
         margin:auto;
-        background-color:#ffffff;
-        border-style: solid;
-        border-width: 2px;
+        background-color: #3CD1BD;
     }
 
     .menu li a {
