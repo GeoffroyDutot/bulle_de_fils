@@ -74,18 +74,23 @@ if(isset($_FILES['image'])){
 									}else{echo "<div class='error' >Les mots de passes ne sont pas identiques </div>";}
  }
  ?>
+
+
 <!DOCTYPE html>
+
 <html>
+
 <head>
     <meta charset="utf-8">
     <link rel="shortcut icon" type="image/png" href="../images/favicon.ico"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
     <title>Bulle de fil - Administration</title>
-
     <link rel="stylesheet" type="text/css" media="screen" href="../css/admin.css">
     <script src="main.js"></script>
 </head>
+
+
 <body>
 <a href="../../index.php" class="myButton">Retour à l'accueil</a>
     <?php
@@ -121,7 +126,7 @@ if(isset($_FILES['image'])){
         <td colspan=2>
 
 
-<table id="images"><tr> 
+<table id="images"><tr>
 <th colspan=20>Images</th> </tr>
 <?php
 $dir = "../photos/";
@@ -168,77 +173,73 @@ foreach($files as $image){?>
     </tr>
     </table>
 
-<table>
-<form method="post">
-<th> Changer la description de l'accueil </th>
-<tr> <td>
-<textarea style="margin: 0px; width: 90%; height: 200px;" name="text_description"><?php echo $description_req['text'];?>
-</textarea><br><br>
-<input type="submit" name="submit_description" value="Modifier">
-</td></tr>
-
-
-</form>
-</table>
-
-
-
-
-
-
-
-
-    <br><br>
-    <h2 id="subtitle"> Tableau des commandes </h2>
     <table>
-        <tr>
-            <th>
-                Numero de la commande
-            </th>
-            <th>
-                Nom
-            </th>
-            <th>
-                Prenom
-            </th>
-            <th>
-                Numero de telephone
-            </th>
-            <th>
-                Mail
-            </th>
-            <th>
-                Objet de la commande
-            </th>
-            <?php
-foreach($commandes as $commande){
-    ?>
-    <tr>
-        <td>
-           <?php echo $commande['id_commande']; ?>
-        </td>
-        <td>
-           <?php echo $commande['nom']; ?>
-        </td>
-        <td>
-           <?php echo $commande['prenom']; ?>
-        </td>
-        <td>
-           <?php echo $commande['telephone']; ?>
-        </td>
-        <td>
-           <?php echo $commande['mail']; ?>
-        </td>
-        <td>
-           <?php echo $commande['objet']; ?>
-        </td>
-    </tr>
-    <?php
-}}else{
-    echo "Vous n'etes pas connecté.";
-}
-?>
-    </table>
+  <form method="post">
+    <th> Changer la description de l'accueil </th>
+    <tr> <td>
+    <textarea style="margin: 0px; width: 90%; height: 200px;" name="text_description"><?php echo $description_req['text'];?>
+    </textarea><br><br>
+    <input type="submit" name="submit_description" value="Modifier">
+    </td></tr>
+  </form>
+  </table>
+
+
+  <br><br>
+
+  <h2 id="subtitle"> Tableau des commandes </h2>
+  <table>
+                  <tr>
+                      <th>
+                          Numero de la commande
+                      </th>
+                      <th>
+                          Nom
+                      </th>
+                      <th>
+                          Prenom
+                      </th>
+                      <th>
+                          Numero de telephone
+                      </th>
+                      <th>
+                          Mail
+                      </th>
+                      <th>
+                          Objet de la commande
+                      </th>
+                      <?php
+          foreach($commandes as $commande){
+              ?>
+              <tr>
+                  <td>
+                     <?php echo $commande['id_commande']; ?>
+                  </td>
+                  <td>
+                     <?php echo $commande['nom']; ?>
+                  </td>
+                  <td>
+                     <?php echo $commande['prenom']; ?>
+                  </td>
+                  <td>
+                     <?php echo $commande['telephone']; ?>
+                  </td>
+                  <td>
+                     <?php echo $commande['mail']; ?>
+                  </td>
+                  <td>
+                     <?php echo $commande['objet']; ?>
+                  </td>
+              </tr>
+              <?php
+          }}else{
+              echo "Vous n'etes pas connecté.";
+          }
+          ?>
+
+
+  </table>
 
 </body>
+
 </html>
