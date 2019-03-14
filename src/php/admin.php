@@ -2,8 +2,22 @@
 session_start();
 $bdd = new PDO('mysql:host=localhost;dbname=bulledefil;charset=utf8', 'root', '');
 
-$requete = $bdd->query("SELECT * FROM commandes ORDER BY id_commande DESC ;");
-$commandes = $requete->fetchAll();
+$requete = $bdd->query("SELECT text FROM data_text WHERE name='description' ;");
+$description = $requete->fetch();
+
+$requete_desc = $bdd->query("SELECT * FROM commandes ORDER BY id_commande DESC ;");
+$commandes = $requete_desc->fetchAll();
+
+if(isset($_POST['submit_description'])){
+   $description = $_POST['description'];
+   $sql = $bdd->prepare("UPDATE data_text SET text=:description WHERE name='description'");
+   $sql->execute(array(
+       'description'=>$description));
+
+   echo "<div class='succes'> Votre message a bien été envoyé ! </div>";
+
+   }else{echo "aie";}
+
 
 if(isset($_POST['supprimer'])){
     if(isset($_POST['fichier'])){
@@ -68,7 +82,7 @@ if(isset($_FILES['image'])){
     <link rel="shortcut icon" type="image/png" href="../images/favicon.ico"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
-    <title>Page Title</title>
+    <title>Bulle de fil - Administration</title>
 
     <link rel="stylesheet" type="text/css" media="screen" href="../css/admin.css">
     <script src="main.js"></script>
@@ -154,6 +168,27 @@ foreach($files as $image){?>
     </td>
     </tr>
     </table>
+
+<table>
+<form method="post">
+<th> Changer la description de l'accueil </th>
+<tr> <td>
+<textarea style="margin: 0px; width: 90%; height: 200px;" name="description"><?php echo $description;?>
+</textarea><br><br>
+<input type="submit" name="submit_description" value="Modifier">
+</td></tr>
+
+
+</form>
+</table>
+
+
+
+
+
+
+
+
     <br><br>
     <h2 id="subtitle"> Tableau des commandes </h2>
     <table>
