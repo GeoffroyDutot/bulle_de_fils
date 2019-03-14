@@ -1,3 +1,5 @@
+<?php $bdd = new PDO('mysql:host=localhost;dbname=bulledefil;charset=utf8', 'root', ''); ?>
+
 <!DOCTYPE html>
 
 <html lang="FR-fr">
@@ -31,7 +33,7 @@
 <table class="tableau_tissus">
  
 <?php
-$dir = "../photos/";
+$dir = "../banque/";
 chdir($dir);
 array_multisort(array_map('filemtime', ($files = glob("*.{jpg,png,gif}", GLOB_BRACE))), SORT_DESC, $files);
 $i = 0;
@@ -42,7 +44,12 @@ foreach($files as $image){
 <td>
 <?php  $i += 1;
  ?>
-<img src="../photos/<?php echo $image ?> " class="images_galerie" width="300px">
+<img src="../banque/<?php echo $image ?> " class="images_galerie" width="300px">
+<?php $requete = $bdd->prepare("SELECT description FROM banquedefil WHERE nom_image=:nom ;");
+ $requete->execute(array('nom'=>$image));
+$description_image = $requete->fetch(); 
+echo "<br>".$description_image['description'];
+?>
 </td>
 <?php if($i>2){
     $i=0;
