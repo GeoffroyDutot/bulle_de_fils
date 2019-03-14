@@ -1,5 +1,6 @@
 <?php
 
+
 /* Connection à la base de données */
 
 $bdd = new PDO('mysql:host=localhost;dbname=bulledefil;charset=utf8', 'root', '');

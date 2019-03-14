@@ -11,8 +11,7 @@ $commandes = $requete_desc->fetchAll();
 if(isset($_POST['submit_description'])){
    $description = $_POST['text_description'];
    $req = $bdd->prepare("UPDATE data_text SET text=:description WHERE name='description'");
-   $req->execute(array(
-       'description'=>$description));
+   $req->execute(array('description'=>$description));
 
    echo "<div class='succes'> Votre message a bien été envoyé !  (rechargez la page pour voir les modifications) </div>";
 
