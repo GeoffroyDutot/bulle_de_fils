@@ -1,6 +1,10 @@
 <?php
     session_start();
     $_SESSION['rank']="user";
+    $bdd = new PDO('mysql:host=localhost;dbname=bulledefil;charset=utf8', 'root', '');
+    $requete = $bdd->query("SELECT text FROM data_text WHERE name='description' ;");
+    $description = $requete->fetch();
+    
 ?>
 <!DOCTYPE html>
 <html lang="FR-fr">
@@ -37,14 +41,7 @@
 
  <!-- <img src="./src/image/im.jpg">          image creatice -->
 
-<p id="description"> Couturière indépendante et passionné  depuis une vingtaine d'années, je réalise principalement des accessoires esthétique comme des sacs, trousses pour faciliter la vie de chacun au quotidien
-
-    mais également des coutures pour bébé, enfants, femmes.
-
-    Soucieuse de la qualité de mon travail, j'utilise principalement des tissus bio et oeko tex de bonne qualité veillant à ne pas impacter négativement l'environnement en produisant 0 déchets.
-
-    Aussi les commandes que vous me confierez seront prises au sérieux, personnalisable selon vos critères et effectuées avec professionnalisme.
-
+<p id="description"> <?php echo $description['text'] ?>
 
 </p>
 </div>

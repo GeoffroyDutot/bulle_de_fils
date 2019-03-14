@@ -3,18 +3,18 @@ session_start();
 $bdd = new PDO('mysql:host=localhost;dbname=bulledefil;charset=utf8', 'root', '');
 
 $requete = $bdd->query("SELECT text FROM data_text WHERE name='description' ;");
-$description = $requete->fetch();
+$description_req = $requete->fetch();
 
 $requete_desc = $bdd->query("SELECT * FROM commandes ORDER BY id_commande DESC ;");
 $commandes = $requete_desc->fetchAll();
 
 if(isset($_POST['submit_description'])){
-   $description = $_POST['description'];
-   $sql = $bdd->prepare("UPDATE data_text SET text=:description WHERE name='description'");
-   $sql->execute(array(
+   $description = $_POST['text_description'];
+   $req = $bdd->prepare("UPDATE data_text SET text=:description WHERE name='description'");
+   $req->execute(array(
        'description'=>$description));
 
-   echo "<div class='succes'> Votre message a bien été envoyé ! </div>";
+   echo "<div class='succes'> Votre message a bien été envoyé !  (rechargez la page pour voir les modifications) </div>";
 
    }else{echo "aie";}
 
@@ -173,8 +173,8 @@ foreach($files as $image){?>
 <form method="post">
 <th> Changer la description de l'accueil </th>
 <tr> <td>
-<textarea style="margin: 0px; width: 90%; height: 200px;" name="description"><?php echo $description;?>
-</textarea><br><br>
+<textarea style="margin: 0px; width: 90%; height: 200px;" name="text_description"><?php echo $description_req['text'];?>
+</textarea><br><br><?php echo $description_req['text'];?>
 <input type="submit" name="submit_description" value="Modifier">
 </td></tr>
 
