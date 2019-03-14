@@ -48,7 +48,7 @@ foreach($files as $image){
 <?php $requete = $bdd->prepare("SELECT description FROM banquedefil WHERE nom_image=:nom ;");
  $requete->execute(array('nom'=>$image));
 $description_image = $requete->fetch(); 
-echo "<br>".$description_image['description'];
+echo "<br><strong>".$description_image['description']."</strong>";
 ?>
 </td>
 <?php if($i>2){

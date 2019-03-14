@@ -164,8 +164,8 @@ if(isset($_FILES['image'])){
     </td>
     <td>
     <form action = "" method = "POST" enctype = "multipart/form-data">
-         <input type = "file" name = "image_banque" />
-         <input type="text" name="description_image"/>
+         <input type = "file" name = "image_banque" /><br>
+         Titre de votre image :<input type="text" name="description_image"/><br>
          <input type = "submit"/>
 
 
