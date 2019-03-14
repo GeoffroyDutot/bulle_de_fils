@@ -2,7 +2,7 @@
 session_start();
 $bdd = new PDO('mysql:host=localhost;dbname=bulledefil;charset=utf8', 'root', '');
 
-$requete = $bdd->query("SELECT * from commandes");
+$requete = $bdd->query("SELECT * FROM commandes ORDER BY id_commande DESC ;");
 $commandes = $requete->fetchAll();
 
 if(isset($_POST['supprimer'])){
