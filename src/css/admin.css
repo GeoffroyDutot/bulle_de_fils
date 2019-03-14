@@ -338,11 +338,16 @@ table {
     table#images{
         border: medium solid #427959;
         border-collapse: collapse;
+        border-right: medium solid #427959;
         width: 100%;
+    }
+    table#outil{
+        width: 10%;
     }
     h2#subtitle{
         font-size: 54px;
         font-family: Corbel;
+        margin-left: 30%;
     }
     th {
         font-family: Corbel;
@@ -353,6 +358,7 @@ table {
         color: white;
         background-color: #31a54e;
         background-image: url(sky.jpg);
+
     }
     td {
         font-family: sans-serif;
@@ -361,6 +367,10 @@ table {
         padding: 5px;
         text-align: center;
         background-color: #f8fcf9;
+    }
+    td#images_td{
+        border: medium solid #427959;
+        border-width: 1px;
     }
     caption {
         font-family: sans-serif;
