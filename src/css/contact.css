@@ -5,7 +5,11 @@
   margin-bottom: 1%;
   width: 40%;
 }
+    #table{
+        border-collapse : separate;
+        border-spacing : 20px;
 
+    }
 
 form {
     padding: 5%;
@@ -138,13 +142,14 @@ form {
 @media(min-width: 426px) and (max-width: 767px) {
   .contact{
     margin-left: 35%;
-    padding-left: 100px;
+    padding-left: 80px;
   }
   .block_articles {
-      margin-top: 70%;
-      margin-left: 15%;
+      margin-top: 65%;
+      margin-left: 12%;
       margin-bottom: 1%;
       width: 40%;
+      min-height: 310px;
   }
 
   .erreur_connexion {
