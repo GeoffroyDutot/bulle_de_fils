@@ -5,6 +5,7 @@
         margin: 0;
         padding: 0;
         height: 100%;
+
     }
 
     img#entete{
@@ -35,8 +36,8 @@
     .menu {
         background-attachment: fixed;
         position: absolute;
-        top: 40%;
-        width: 60%;
+        top: 35%;
+        width: 70%;
         left : 25%;
     }
 
@@ -109,17 +110,19 @@
     }
 
 
-    /* footer#absolute{
+     footer#absolute{
         position: absolute;
         margin-top: 2%;
         margin-top: 1%;
         padding-top: 1%;
-        bottom: 0px;
+        bottom: 0;
+         left: 0;
+         right: 0;
         float: left;
         text-align: center;
         background-color: #3CD1BD;
         width: 100%;
-    } */
+    }
 
     footer a {
         color: black;
@@ -129,7 +132,7 @@
 }
 /* Responsive pc portable */
 
-@media(min-width: 768px) and (max-width: 1388px) {
+@media(min-width: 767px) and (max-width: 1388px) {
 
     body {
         background-color: #edfef4;
@@ -295,14 +298,18 @@
     .menu {
         background-attachment: fixed;
         position: absolute;
-        top: 24.5%;
-        width: 80%;
-        left : 12%;
+        top: 18%;
+        width: 90%;
+        left: 10%;
+
+
+
     }
 
     .menu ul {
         list-style-type: none;
         text-align: center;
+
     }
 
     .menu li {
@@ -317,7 +324,7 @@
       float: left;
       margin: auto;
       display:block;
-      width: 100px;
+      width: 80px;
       height: 30px;
       color:#000000;
       text-decoration:none;
