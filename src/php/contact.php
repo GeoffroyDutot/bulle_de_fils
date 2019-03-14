@@ -63,38 +63,37 @@ if (isset($_POST["valider"])) {
 
 <body>
 
+<!-- logo + banniere + menu -->
+
 <header>
     <a href="../../index.php"> <img  id="logo" src="../images/logo.jpg"> </a>
     <img id="entete"src="../images/entete.PNG">
-   <!-- <strong><h1 id="titre">Galerie</h1></strong> -->
+		<?php include('navbar.php') ?>
 </header>
 
-<?php include('navbar.php') ?>
+
 
 <div class="block_articles">
 	<center> <h1 class="contact">Contact</h1> </center>
 	<form action="" method="POST">
-	<table id="table">
-
-		<tr><td class="txt">*Prénom :<br> <input type="text" name="prenom" placeholder="Prénom" maxlength="30" value=" <?php if(isset($_POST["valider"])){  echo $_POST['prenom']; }?>"></td></tr>
-		<tr><td class="txt">*Nom :<br> <input type="text" name="nom" placeholder="Nom" maxlength="30" value="<?php if(isset($_POST["valider"])){ echo $_POST['nom']; } ?>"></td></tr>
-		<tr><td class="txt">*Adresse Email :<br> <input type="email" name="mail" placeholder="exemple@email.fr" value="<?php if(isset($_POST["valider"])){ echo $_POST['mail']; }?>"></td></tr>
-		<tr><td class="txt">Telephone :<br> <input type="text" name="numero" placeholder=" 06 01 02 03 04" maxlength="75" value="<?php if(isset($_POST["valider"])){ echo $_POST['numero']; }?>"></td></tr>
-		<tr><td class="txt">*Objet de votre commande : <br><textarea name="objet" rows=2 cols=20 value="<?php if(isset($_POST["valider"])){ echo $_POST['objet']; } ?>" ></textarea>
-		<tr><td class="txt"><i><h6>*Champs obligatoires<br></h6></i></td></tr>
-		<tr>
-
-		<tr><td align="center"></td></tr>
-
-
+		<table id="table">
+			<tr><td class="txt">*Prénom :<br> <input type="text" name="prenom" placeholder="Prénom" maxlength="30" value=" <?php if(isset($_POST["valider"])){  echo $_POST['prenom']; }?>"></td></tr>
+			<tr><td class="txt">*Nom :<br> <input type="text" name="nom" placeholder="Nom" maxlength="30" value="<?php if(isset($_POST["valider"])){ echo $_POST['nom']; } ?>"></td></tr>
+			<tr><td class="txt">*Adresse Email :<br> <input type="email" name="mail" placeholder="exemple@email.fr" value="<?php if(isset($_POST["valider"])){ echo $_POST['mail']; }?>"></td></tr>
+			<tr><td class="txt">Telephone :<br> <input type="text" name="numero" placeholder=" 06 01 02 03 04" maxlength="75" value="<?php if(isset($_POST["valider"])){ echo $_POST['numero']; }?>"></td></tr>
+			<tr><td class="txt">*Objet de votre commande : <br><textarea name="objet" rows=2 cols=20 value="<?php if(isset($_POST["valider"])){ echo $_POST['objet']; } ?>" ></textarea>
+			<tr><td class="txt"><i><h6>*Champs obligatoires<br></h6></i></td></tr>
+			<tr>
+			<tr><td align="center"></td></tr>
 		</table><center>
 
-			<br>
-			<input type="submit" value="Confirmer" name="valider"><br><br>
+				<br>
+
+				<input type="submit" value="Confirmer" name="valider"><br><br>
 
 
 
-	</form>
+		</form>
 
 	<br />
 
@@ -109,8 +108,10 @@ if (isset($_POST["valider"])) {
 
 	</div>
 
-
-<?php include('footer.php')?>
+<footer>
+	<?php include('footer.php')?>
+</footer>
 
 </body>
+
 </html>

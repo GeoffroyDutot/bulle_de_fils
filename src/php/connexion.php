@@ -37,49 +37,54 @@ if (isset($_POST["formconnexion"])) {
 
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
 
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
 	<meta charset="utf-8"></meta>
   <link rel="shortcut icon" type="image/png" href="../images/favicon.ico"/>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
 	<title>Bulle de fil - Connexion</title>
 	<link rel="stylesheet" type="text/css" href="../css/theme.css">
 	<link rel="stylesheet" type="text/css" href="../css/connexion.css">
-
-
 </head>
 
 <body>
 
 		<div align="center" class="connexion">
-			<form method="POST" action="">
-				<h1>CONNEXION</h1>
-				<form action="" method="post">
-				<table id="table">
- 				<center>
- 		<label for="login">Login : </label>
- 		<input type="text" name="login" placeholder="Login" value="<?php if(isset($mailconnect)) {echo $mailconnect; } ?>"><br><br>
- 		<label for="password">Mot de passe</label>
- 		<input type="password" name="mdpconnect" placeholder="Mot de passe"><br><br>
-		<input type="submit" value="Se connecter" name="formconnexion"><br>
+				<form method="POST" action="">
+					<h1>CONNEXION</h1>
+					<form action="" method="post">
+						<table id="table">
+			 				<center>
+						 		<label for="login">Login : </label>
+						 		<input type="text" name="login" placeholder="Login" value="<?php if(isset($mailconnect)) {echo $mailconnect; } ?>">
+								<br><br>
+						 		<label for="password">Mot de passe</label>
+						 		<input type="password" name="mdpconnect" placeholder="Mot de passe">
+								<br><br>
+								<input type="submit" value="Se connecter" name="formconnexion">
+								<br>
+							</center>
+						</table>
+					</form>
 
-			</center>
-			</table>
-			</form>
-			<br>
+				<br>
 
-			<center class="erreur_connexion">
-				<?php
-				if (isset($erreur)) {
-					echo $erreur;
-					# code...
-				}
-				?>
-			</center>
+				<center class="erreur_connexion">
+					<?php
+					if (isset($erreur)) {
+						echo $erreur;
+						# code...
+					}
+					?>
+				</center>
 
 		</div>
 
 </body>
+
 </html>
