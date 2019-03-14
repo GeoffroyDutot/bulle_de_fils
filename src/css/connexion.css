@@ -1,3 +1,5 @@
+/* Responsive grand écran */
+
 @media(min-width: 1388px) {
 .connexion {
   margin-top : 15%;
@@ -6,4 +8,40 @@
 .erreur_connexion{
   color : red;
 }
+}
+
+/* Responsive grand écran */
+
+@media(min-width: 768px) and (max-width: 1388px) {
+  .connexion {
+    margin-top : 15%;
+  }
+
+  .erreur_connexion{
+    color : red;
+  }
+}
+
+/* Responsive grand écran */
+
+@media(min-width: 426px) and (max-width: 767px) {
+  .connexion {
+    margin-top : 15%;
+  }
+
+  .erreur_connexion{
+    color : red;
+  }
+}
+
+/* Responsive grand écran */
+
+@media(max-width: 426px) {
+  .connexion {
+    margin-top : 15%;
+  }
+
+  .erreur_connexion{
+    color : red;
+  }
 }

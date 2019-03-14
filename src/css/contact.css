@@ -1,3 +1,5 @@
+/* Responsive grand écran */
+
 @media(min-width: 1388px) {
 .block_articles {
   margin-top: 28%;
@@ -147,7 +149,7 @@ form {
       margin-left: 12%;
       margin-bottom: 1%;
       width: 40%;
-      min-height: 310px;
+      min-height: 550px;
   }
 
 
@@ -222,7 +224,7 @@ form {
         margin-left: -5%;
         margin-bottom: 1%;
         width: 30%;
-        min-height: 310px;
+        min-height: 550px;
     }
 
 
