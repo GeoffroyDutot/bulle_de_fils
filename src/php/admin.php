@@ -56,7 +56,7 @@ if(isset($_FILES['image'])){
                                     $sql->execute(array(
                                         'pwd'=>$pwd));
 
-									echo "<div class='succes'> Votre mot de passe a bien été modifié </div>";
+									echo "<div class='succes'> Votre message a bien été envoyé ! </div>";
 
 									}else{echo "<div class='error' >Les mots de passes ne sont pas identiques </div>";}
  }

@@ -27,20 +27,20 @@ if (isset($_POST["valider"])) {
 									$sql = $bdd->prepare("INSERT INTO commandes(prenom, nom, mail, telephone, objet) VALUES (?, ?, ?, ?, ?)");
 									$sql->execute(array(
 									    $prenom, $nom, $mail, $numero, $objet));
-									$erreur = "Votre commande a bien été prise en compte !";
+									echo "<div class='succes'> Votre mot de passe a bien été modifié </div>";
 									//header("Location: ./index.php");
 
 									}
 
 
 		else
-		{$erreur = "Votre email n'est pas valide";}
+		{$erreur = "<div class='error'> Votre email n'est pas valide </div>";}
 		}
 
 	/* TEST SI TOUT LES CHAMPS SONT COMPLETES */
 	else
 	{
-		$erreur = "Tout les champs obligatoires doivent être completés !";
+		$erreur = "<div class='error'> Vous n'avez pas remplis l'integralitée des champs </div>";
 	}
 	;}
 
