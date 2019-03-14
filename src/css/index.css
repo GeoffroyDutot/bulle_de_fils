@@ -16,9 +16,17 @@ p#description{
 }
 
     .follow {
-        margin-left: 10%;
+        margin-left: 38%;
         margin-top: 5%;
         min-height: 142px;
+
+
+
+    }
+    .follow a {
+        padding-left: 3%;
+    }
+    .images_reseaux{
 
     }
 
@@ -46,9 +54,15 @@ p#description{
     }
 
     .follow {
-        margin-left: 10%;
+        margin-left: 35%;
         margin-top: 5%;
         min-height: 220px;
+    }
+    .follow a {
+        padding-left: 3%;
+    }
+    .images_reseaux{
+
     }
 }
 
@@ -79,6 +93,12 @@ p#description{
         margin-top: 5%;
         min-height: 187px;
     }
+    .follow a {
+        padding-left: 3%;
+    }
+    .images_reseaux{
+
+    }
 }
 
 
@@ -99,8 +119,18 @@ p#description{
     }
 
     .follow{
-        margin-left: 10%;
+        margin-left: 5%;
         margin-top: 10%;
         min-height: 240px;
+
+    }
+    .follow a {
+        padding-left: 3%;
+        width: 50px;
+
+
+    }
+    .images_reseaux{
+        width: 20%;
     }
 }
