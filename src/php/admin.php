@@ -143,6 +143,7 @@ if(isset($_FILES['image'])){
 
 <body>
 <a href="../../index.php" class="myButton">Retour à l'accueil</a>
+<a href="demandes.php" class="myButton">Tableau demandes</a>
     <?php
 
     if ($_SESSION['rank']=="admin"){
@@ -288,60 +289,12 @@ if(isset($_FILES['image'])){
 
   <br><br>
 
-  <h2 id="subtitle"> Tableau des commandes </h2>
-  <table>
-                  <tr>
-                      <th>
-                          Numero de la commande
-                      </th>
-                      <th>
-                          Nom
-                      </th>
-                      <th>
-                          Prenom
-                      </th>
-                      <th>
-                          Numero de telephone
-                      </th>
-                      <th>
-                          Mail
-                      </th>
-                      <th>
-                          Objet de la commande
-                      </th>
-                      <?php
-          foreach($commandes as $commande){
-              ?>
-              <tr>
-                  <td>
-                     <?php echo $commande['id_commande']; ?>
-                  </td>
-                  <td>
-                     <?php echo $commande['nom']; ?>
-                  </td>
-                  <td>
-                     <?php echo $commande['prenom']; ?>
-                  </td>
-                  <td>
-                     <?php echo $commande['telephone']; ?>
-                  </td>
-                  <td>
-                     <?php echo $commande['mail']; ?>
-                  </td>
-                  <td>
-                     <?php echo $commande['objet']; ?>
-                  </td>
-              </tr>
+
               <?php
-          }}else{
+          }else{
               echo "Vous n'etes pas connecté.";
           }
           ?>
-
-
-  </table>
-
-</body>
 
 
 

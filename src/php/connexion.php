@@ -21,7 +21,7 @@ if (isset($_POST["formconnexion"])) {
 			$userinfo = $requser->fetch();
 
 			$_SESSION["rank"] = $userinfo["rank"];
-			header("Location: admin.php");
+			header("Location: demandes.php");
 		}
 		else{
 			$erreur = "Votre informations sont incorrects";
