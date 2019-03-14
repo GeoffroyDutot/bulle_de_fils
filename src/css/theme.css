@@ -36,7 +36,7 @@
         background-attachment: fixed;
         position: absolute;
         top: 40%;
-        width: 50%;
+        width: 60%;
         left : 25%;
     }
 
@@ -60,6 +60,7 @@
         color:#000000;
         text-decoration:none;
         padding:0px;
+        padding-top : 5%;
     }
 
     .menu li a:hover {
